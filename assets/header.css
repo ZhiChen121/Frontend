@@ -2,6 +2,11 @@
   --primary-colour: #004289;
 }
 
+.show-search {
+  padding: 2px;
+  width: 50%;
+}
+
 #pageheader {
   display: flex;
 }
