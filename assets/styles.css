@@ -6173,21 +6173,21 @@ hr {
 /* Fonts */
 
 body {
-    font-family: Futura, sans-serif;
+    font-family: "IBM Plex Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
 }h1, .h1-style, h2, h3, h4, h5, h6, .heading-font {
-    font-family: "Gill Sans Nova", sans-serif;
-    font-weight: 600;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
     font-style: normal;
 }.pageheader .logotext,
 #shoplogo .logotext {
-    font-family: "Gill Sans Nova", sans-serif;
-    font-weight: 600;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
     font-style: normal;
 }.navigation {
-    font-family: Futura, sans-serif;
-    font-weight: 500;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -6245,7 +6245,7 @@ input[type=tel],
 textarea {
   font-size: 16px;
   line-height: 15px;
-    font-family: Futura, sans-serif;
+    font-family: "IBM Plex Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
   background: #ffffff;
@@ -6351,7 +6351,7 @@ input[type=button] {
   border-radius: 3px;
   transition: background-color 100ms, color 100ms, border-color 100ms, opacity 100ms;
   display: inline-block;
-    font-family: Futura, sans-serif;
+    font-family: "IBM Plex Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
   letter-spacing: 0.08em;

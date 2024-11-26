@@ -1,146 +1,164 @@
+{% style %}
+  .section-footer-container {
+    display: flex;
+    margin: 60px 0px;
+    justify-content: space-around;
+  }
+
+  .footer-info-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-info-links h1 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+  }
+
+  .footer-contact h1 {
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+
+  .footer-contact p span {
+    color: #004289;
+    font-weight: bold;
+  }
+
+  .footer-contact p:first {
+    margin-bottom: 0px;
+  }
+
+  .footer-contact .address {
+    width: 150px;
+  }
+
+  .section-footer__newsletter-block {
+    background-color: #004289;
+    padding: 40px;
+  }
+
+  h6#newsletter-title {
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+
+  .section-footer__text {
+    color: white;
+  }
+
+  .btn--signup-form__button {
+    width: 100%;
+    background-color: #032C58;
+    font-weight: bold;
+  }
+
+   .section-footer-container .signup-form label {
+     color: white;
+     margin-bottom: 5px;
+   }
+
+  .social-icons-footer {
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+  }
+
+  .social-icons-footer span {
+    background-color: #004289;
+    padding: 10px;
+    border-radius: none;
+  }
+{% endstyle %}
+
 <div data-section-type="footer">
   {% if section.blocks != blank %}
     <div class="container container--no-max section-footer__row-container">
-      <div class="section-footer__row section-footer__row--blocks" data-num-blocks="{{ section.blocks.size }}">
-        {% for block in section.blocks %}
-          {% case block.type %}
-          {% when '@app' %}
-            <div class="section-footer__row__col">
-              {% render block %}
+      <div class="section-footer-container" data-num-blocks="{{ section.blocks.size }}">
+         <div class="footer-logo">
+           <img src="{{ 'logo.png' | asset_url }}" width="200px" height="50px"/>
+         </div>
+         <div class="footer-info-links">
+           <h1>Info</h1>
+           <a>Search</a>
+           <a>Click and Collect</a>
+           <a>Returns</a>
+           <a>Delivery</a>
+           <a>Opening Hours</a>
+           <a>Privacy</a>
+           <a>Terms of Service</a>
+           <a>FAQs</a>
+         </div>
+         <div class="footer-contact">
+           <h1>Contact</h1>
+           <div>
+             <p>Tel <span>012 3456789</span></p>
+             <p>Email <span>hello@domain.com</span></p>
+           </div>
+           <div class="address">
+             <p>Lorem Ipsum Outdoor Unit 1, Lipsum, City, Co County</p>
+           </div>
+           <div>
+             Follow Us
+           </div>
+           <div class="social-icons-footer">
+             <span>{%- render 'instagram' -%}</span>
+             <span>{%- render 'facebook' -%}</span>
+             <span>{%- render 'pinterest' -%}</span>
+             <span>{%- render 'twitter' -%}</span>
+           </div>
+         </div> 
+         <div class="section-footer__row__col section-footer__newsletter-block">
+            <h6 class="section-footer__title" id="newsletter-title">
+              Join Our Newsletter
+            </h6>
+           
+            <div class="section-footer__text">
+              <p>Be the first to know about Our offers, events, new arrivals & sales.</p>
             </div>
 
-          {% when 'menu' %}
-            <div class="section-footer__row__col section-footer__menu-block" role="navigation" aria-label="{{ 'layout.footer.navigation_aria_label' | t | escape }}" {{ block.shopify_attributes }}>
-              {% if block.settings.title != blank %}
-                {%- assign title_word_count = block.settings.title | split: ' ' | size -%}
-                <h6 class="section-footer__title{% if title_word_count < 4 %} no-wrap{% endif %}">
-                  {{- block.settings.title | escape -}}
-                </h6>
-              {% endif %}
-
-              {% if block.settings.menu != blank %}
-                <ul class="section-footer__menu-block__menu" {{ block.shopify_attributes }}>
-                  {% for link in linklists[block.settings.menu].links %}
-                    <li>
-                      <a href="{{ link.url }}" {% if link.title.size < 25 %}class="no-wrap"{% endif %}>
-                        {{- link.title -}}
-                      </a>
-                    </li>
-                  {% endfor %}
-                </ul>
-              {% endif %}
-            </div>
-
-          {% when 'text' %}
-            <div class="section-footer__row__col section-footer__text-block {% if block.settings.text != blank %}section-footer__text-block--with-text{% endif %}" {{ block.shopify_attributes }}>
-              {% if block.settings.title != blank %}
-                {%- assign title_word_count = block.settings.title | split: ' ' | size -%}
-                <h6 class="section-footer__title{% if title_word_count < 4 %} no-wrap{% endif %}">
-                  {{- block.settings.title | escape -}}
-                </h6>
-              {% endif %}
-
-              {% if block.settings.text != blank %}
-                <div class="section-footer__text">
-                  {{- block.settings.text -}}
-                </div>
-              {% endif %}
-
-              {% if block.settings.image != blank %}
-                <span class="section-footer__text-block__image">
-                  {%- capture double_image_width -%}{{ block.settings.image_width | times: 2 }}x{%- endcapture -%}
-                  <div class="rimage-outer-wrapper" style="width: {{ block.settings.image_width }}px">
-                    <div class="rimage-wrapper lazyload--placeholder" style="padding-top:{{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%">
-                      <img class="rimage__image lazyload fade-in" data-src="{{ block.settings.image | img_url: double_image_width }}" alt="{{ shop.name | escape }}" />
-                    </div>
+            <div class="signup-form">
+              {% form 'customer', id: 'footer_newsletter_signup' %}
+                {% if form.posted_successfully? %}
+                  <div class="section-footer__newsletter-block__message signup-form__response signup-form__response--success">
+                    <h6>{{ 'layout.signup.post_success' | t }}</h6>
                   </div>
-                </span>
-              {% endif %}
-
-              {% if block.settings.show_social_icons != blank %}
-                <div class="section-footer__text-block__social">
-                  {% capture icon_size %}{% if block.settings.soc_icons_large %}x46{% else %}x30{% endif %}{% endcapture %}
-                  {% capture container_class %}{% if block.settings.soc_icons_large %}social-links--large{% else %}{% endif %}{% endcapture %}
-                  {% render 'social-icons', icon_setting: settings.social_custom_icon, icon_size: icon_size, container_class: container_class %}
-                </div>
-              {% endif %}
-            </div>
-
-          {% when 'newsletter' %}
-            <div class="section-footer__row__col section-footer__newsletter-block" {{ block.shopify_attributes }}>
-              {% if block.settings.title != blank %}
-                {%- assign title_word_count = block.settings.title | split: ' ' | size -%}
-                <h6 class="section-footer__title{% if title_word_count < 4 %} no-wrap{% endif %}">
-                  {{- block.settings.title | escape -}}
-                </h6>
-              {% endif %}
-
-              {% if block.settings.text != blank %}
-                <div class="section-footer__text">
-                  {{ block.settings.text }}
-                </div>
-              {% endif %}
-
-              <div class="signup-form">
-                {% form 'customer', id: 'footer_newsletter_signup' %}
-                  {% if form.posted_successfully? %}
-                    <div class="section-footer__newsletter-block__message signup-form__response signup-form__response--success">
-                      <h6>{{ 'layout.signup.post_success' | t }}</h6>
-                    </div>
-                  {% else %}
-                    {% if form.errors %}
-                      {% for field in form.errors %}
-                        <p class="section-footer__newsletter-block__message--error signup-form__response signup-form__response--error">
-                          {{ field | capitalize }} - {{ form.errors.messages[field] }}
-                        </p>
-                      {% endfor %}
-                    {% endif %}
-                    <input type="hidden" name="contact[tags]" value="prospect,newsletter"/>
-                    <p>
-                      <input type="email"
-                        placeholder="{{ 'layout.signup.placeholder' | t }}"
-                        class="signup-form__email"
-                        value=""
-                        name="contact[email]"
-                        aria-label="{{ 'layout.signup.input_label' | t | escape }}"
-                        required />
-                    </p>
-                    <button class="btn btn--{{ block.settings.button_style }} signup-form__button" type="submit">
-                      {{- 'layout.signup.submit' | t -}}
-                    </button>
+                {% else %}
+                  {% if form.errors %}
+                    {% for field in form.errors %}
+                      <p class="section-footer__newsletter-block__message--error signup-form__response signup-form__response--error">
+                        {{ field | capitalize }} - {{ form.errors.messages[field] }}
+                      </p>
+                    {% endfor %}
                   {% endif %}
-                {% endform %}
-              </div>
-
-              {% if block.settings.show_social_icons != blank %}
-                <div class="section-footer__newsletter-block__social">
-                  {% capture icon_size %}{% if block.settings.soc_icons_large %}x46{% else %}x30{% endif %}{% endcapture %}
-                  {% capture container_class %}{% if block.settings.soc_icons_large %}social-links--large{% else %}{% endif %}{% endcapture %}
-                  {% render 'social-icons', icon_setting: settings.social_custom_icon, icon_size: icon_size, container_class: container_class %}
-                </div>
-              {% endif %}
+                  <input type="hidden" name="contact[tags]" value="prospect,newsletter"/>
+                  <p>
+                    <label>Email Address</label>
+                    <input type="email"
+                      class="signup-form__email"
+                      value=""
+                      name="contact[email]"
+                      aria-label="{{ 'layout.signup.input_label' | t | escape }}"
+                      required />
+                  </p>
+                  <button class="btn btn--signup-form__button" type="submit">
+                    {{- 'layout.signup.submit' | t -}}
+                  </button>
+                {% endif %}
+              {% endform %}
             </div>
-
-          {% endcase %}
-        {% endfor %}
+        </div>
       </div>
     </div>
   {% endif %}
 
-  {%- assign showing_localization = false -%}
-  {%- if section.settings.show_language_selector and localization.available_languages.size > 1 -%}{%- assign showing_localization = true -%}{%- endif -%}
-  {%- if section.settings.show_country_selector and localization.available_countries.size > 1 -%}{%- assign showing_localization = true -%}{%- endif -%}
   <div class="container container--no-max section-footer__row-container {% if showing_localization %}section-footer__row-container--with-localization{% endif %}">
     <div class="section-footer__row section-footer__row-lower">
       <div class="section-footer__row__col">
-        {% if section.settings.show_payment_icons %}
-          <div class="section-footer__payment-icons">
-            {% for type in shop.enabled_payment_types %}
-              {{ type | payment_type_svg_tag: class: 'section-footer__payment-icon' }}
-            {% endfor %}
-          </div>
-
-        {% endif %}
+        <p>Built by <b>StudioForty9</b></p>
+        
         {% if section.settings.lower_menu != blank %}
           <div class="section-footer__lower-menu" role="navigation">
             <ul class="section-footer__lower-menu__list" aria-label="{{ 'layout.footer.navigation_aria_label' | t | escape }}">
@@ -156,17 +174,8 @@
         {% endif %}
       </div>
       <div class="section-footer__row__col">
-        {% if section.settings.show_language_selector or section.settings.show_country_selector %}
-          <div class="section-footer__localization">
-            {% render 'localization', input_prefix: 'footer' %}
-          </div>
-        {% endif %}
-
         <div class="copyright">
-          <span class="copy">&copy; {{ "now" | date: "%Y" }} <a href="{{ routes.root_url }}">{{ shop.name }}</a>.</span>
-
-          {{ powered_by_link }}
-
+          <span class="copy">&copy; {{ "now" | date: "%Y" }} <a href="{{ routes.root_url }}">StudioForty9 | Cookies | Terms & Conditions</a>.</span>
         </div>
       </div>
     </div>
