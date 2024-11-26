@@ -10,6 +10,14 @@
   background-color: #F5F6F4;
 }
 
+/* .search-wrapper span { 
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  cursor: pointer; 
+  color: #004289;
+}  */
+
 #pageheader {
   display: flex;
 }
@@ -43,14 +51,6 @@
   color: #004289;
   font-weight: bold;
 }
-
-/* .search-wrapper span { 
-  position: absolute; 
-  top: 0; 
-  right: 0; 
-  cursor: pointer; 
-  color: #004289;
-}  */
 
 .cart-link__icon svg, .cart__count, .outline svg {
   color: var(--primary-colour);
