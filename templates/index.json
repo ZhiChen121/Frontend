@@ -1,1 +1,129 @@
-{"sections":{"custom_hero_eWhmBn":{"type":"custom-hero","settings":{"full_width":true,"code":""}},"1635927863703110df":{"type":"rich-text","blocks":{"1635927863703110df-2":{"type":"text","settings":{"text":"<p>28 Day Returns<\/p>","enlarge_text":false}},"text_jmwpHe":{"type":"text","settings":{"text":"<p>Free Delivery on Orders Over €40<\/p>","enlarge_text":false}},"text_zJhUmj":{"type":"text","settings":{"text":"<p>In Business Since 1977<\/p>","enlarge_text":false}}},"block_order":["1635927863703110df-2","text_jmwpHe","text_zJhUmj"],"custom_css":[],"settings":{"height":"small","text_alignment":"center","full_width":false,"use_alt_bg":false}},"custom_collage_GBUPzb":{"type":"custom-collage","settings":{}},"16359278676808bea5":{"type":"featured-collection","custom_css":["span.product-price__amount {color: #da394c; font-weight: bold;}",".product-price__compare,.product-block__title {color: #004289; font-weight: bold;}",".product-block__title {font-weight: bold;}"],"settings":{"title":"Our Favourites","collection":"homepage-collection","show_vendor":false,"enable_carousel":false,"grid":4,"rows":1,"use_alt_bg":false,"show_view_all":false,"full_width":true}},"newsletter_NLtFAi":{"type":"newsletter","custom_css":[".section-newsletter h2 {font-weight: bold; font-size: 40px;}",".signup-form__inline-container {}",".signup-form__email {width: 50%;}",".signup-form__button {width: 50%; font-weight: bold;}"],"settings":{"title":"Join our newsletter","subheading":"<p>Be the first to know about our offers, events &  new arrivals<\/p>","color_bg":"#ffffff"}},"custom_multi_column_BjpKTw":{"type":"custom-multi-column","settings":{}},"rich_text_dqRyPw":{"type":"rich-text","blocks":{"heading_UFG7c6":{"type":"heading","settings":{"title":"Rich text","use_h1":false}}},"block_order":["heading_UFG7c6"],"settings":{"height":"medium","text_alignment":"center","full_width":false,"use_alt_bg":false}}},"order":["custom_hero_eWhmBn","1635927863703110df","custom_collage_GBUPzb","16359278676808bea5","newsletter_NLtFAi","custom_multi_column_BjpKTw","rich_text_dqRyPw"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "custom_hero_eWhmBn": {
+      "type": "custom-hero",
+      "settings": {
+        "full_width": true,
+        "code": ""
+      }
+    },
+    "1635927863703110df": {
+      "type": "rich-text",
+      "blocks": {
+        "1635927863703110df-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>28 Day Returns</p>",
+            "enlarge_text": false
+          }
+        },
+        "text_jmwpHe": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Free Delivery on Orders Over €40</p>",
+            "enlarge_text": false
+          }
+        },
+        "text_zJhUmj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>In Business Since 1977</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "1635927863703110df-2",
+        "text_jmwpHe",
+        "text_zJhUmj"
+      ],
+      "custom_css": [],
+      "settings": {
+        "height": "small",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "custom_collage_GBUPzb": {
+      "type": "custom-collage",
+      "settings": {}
+    },
+    "16359278676808bea5": {
+      "type": "featured-collection",
+      "custom_css": [
+        "span.product-price__amount {color: #da394c; font-weight: bold;}",
+        ".product-price__compare,.product-block__title {color: #004289; font-weight: bold;}",
+        ".product-block__title {font-weight: bold;}"
+      ],
+      "settings": {
+        "title": "Our Favourites",
+        "collection": "homepage-collection",
+        "show_vendor": false,
+        "enable_carousel": false,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": false,
+        "show_view_all": false,
+        "full_width": true
+      }
+    },
+    "newsletter_NLtFAi": {
+      "type": "newsletter",
+      "custom_css": [
+        ".section-newsletter h2 {font-weight: bold; font-size: 40px;}",
+        ".signup-form__inline-container {}",
+        ".signup-form__email {width: 50%;}",
+        ".signup-form__button {width: 50%; font-weight: bold;}"
+      ],
+      "settings": {
+        "title": "Join our newsletter",
+        "subheading": "<p>Be the first to know about our offers, events &  new arrivals</p>",
+        "color_bg": "#ffffff"
+      }
+    },
+    "custom_multi_column_BjpKTw": {
+      "type": "custom-multi-column",
+      "settings": {}
+    },
+    "rich_text_dqRyPw": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_UFG7c6": {
+          "type": "heading",
+          "settings": {
+            "title": "Rich text",
+            "use_h1": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_UFG7c6"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    }
+  },
+  "order": [
+    "custom_hero_eWhmBn",
+    "1635927863703110df",
+    "custom_collage_GBUPzb",
+    "16359278676808bea5",
+    "newsletter_NLtFAi",
+    "custom_multi_column_BjpKTw",
+    "rich_text_dqRyPw"
+  ]
+}
