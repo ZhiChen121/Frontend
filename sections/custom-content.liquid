@@ -1,0 +1,100 @@
+{% style %}
+  #custom-content-container {
+    display: flex;
+    width: 100%;
+    gap: 50px;
+  }
+
+  .custom-content-text {
+    width: 70%;
+    padding: 50px;
+  }
+
+  .custom-content-sidebar {
+    width: 30%;
+    background-color: #F5F6F4;
+    padding: 50px;
+  }
+
+  .custom-content-sidebar h1, .custom-content-text h1, .custom-content-text h2, .custom-content-text h3 {
+    font-weight: bold;
+    color: #004289;
+  }
+
+  .custom-content-text h1 {
+    font-size: 64px;
+  }
+
+  .custom-content-text p {
+    padding: 20px 0px;
+  }
+
+  .custom-content-sidebar div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .custom-content-sidebar .customer-service {
+    color: #004289;
+  }
+
+  .custom-content-images {
+    display: flex;
+    gap: 20px;
+  }
+
+  .custom-content-images img {
+    width: 50%;
+    object-fit: cover;
+  }
+{% endstyle %}
+
+<div id="custom-content-container">
+  <div class="custom-content-text">
+    <h1>h1 basic content page</h1>
+    <h3>This is a subtitle which typically goes under a headline</h3>
+    <p>Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget risus varius blandit sit amet non magna. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+
+Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas sed diam eget risus varius blandit sit amet non magna.
+
+Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+    <h2>This is h2 headline</h2>
+    <img src="{{ 'table.png' | asset_url }}"/>
+    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas faucibus mollis interdum. Sed posuere consectetur est at lobortis.
+
+Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus.
+
+Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec ullamcorper nulla non metus auctor fringilla.</p>
+    <div class="custom-content-images">
+      <img src="{{ 'green_jacket.png' | asset_url }}"/>
+      <img src="{{ 'purple_jacket.png' | asset_url }}"/>
+    </div>
+  </div>
+  <nav class="custom-content-sidebar">
+    <h1 class="sidebar-title">Sidebar</h1>
+    <div>
+      <a>About us</a>
+      <a class="customer-service">Customer Service</a>
+      <a>Store locator</a>
+      <a>Delivery</a>
+      <a>Return policy</a>
+      <a>Privacy policy</a>
+      <a>Size guide</a>
+      <a>Contact us</a>
+    </div>
+  </nav>
+</div>
+
+{% schema %}
+  {
+    "name": "Custom Content",
+    "settings": [],
+    "presets": [
+      {
+        "name": "Custom Content",
+        "settings": {
+        }
+      }
+    ]
+  }
+{% endschema %}

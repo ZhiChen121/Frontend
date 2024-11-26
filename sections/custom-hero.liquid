@@ -1,0 +1,117 @@
+{% style %}
+  .image-container {
+    display: flex;
+    position: relative;
+  }
+
+  .image1, .image2 {
+    margin: 15px;
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .image2 {
+    margin-left: 0px;
+    width: 65%;
+  }
+
+  .image1 img, .image2 img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+  }
+
+  .image1 {
+    width: 35%;
+  }
+
+  .textContainer {
+    text-align: center;
+    color: white;
+    z-index: 999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .textContainer h1 {
+    font-size: 42px;
+    color: white;
+    font-weight: bold
+  }
+
+  .textContainer p:last-child {
+    font-size: 16px;
+  }
+
+  .textContainer .sub-heading {
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  .textContainer button {
+    background-color: white;
+    border: none;
+    color: #004289;
+    padding: 15px 25px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    border-radius: 0%;
+  }
+{% endstyle %}
+
+<div id="section-id-{{ section.id }}" class="{% unless section.settings.full_width %}container{% endunless %} fully-spaced-row--medium section-id-{{ section.id }}" data-section-type="custom-liquid">
+  <div class="custom-html">
+    <div class="image-container">
+      <div class="image1">
+        <img src="{{ 'hero-homepage.jpg' | asset_url }}">
+        <div class="textContainer">
+          <p class="sub-heading">EVERYTHING YOU NEED</p>
+          <h1>FISHING</h1>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+          <button>SHOP FISHING</button>
+        </div>
+      </div>
+      <div class="image2">
+        <img src="{{ 'hero-homepage-2.jpg' | asset_url }}">
+        <div class="textContainer">
+          <p class="sub-heading">ON AN ADVENTURE</p>
+          <h1>OUTDOORS</h1>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+          <button>SHOP OUTDOORS</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Custom Liquid",
+    "settings": [
+      {
+        "id": "full_width",
+        "type": "checkbox",
+        "label": "Full page width",
+        "default": true
+      },
+      {
+        "type": "liquid",
+        "id": "code",
+        "label": "Custom Liquid"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom Hero",
+        "settings": {
+        }
+      }
+    ]
+  }
+{% endschema %}

@@ -1,9 +1,28 @@
+{% style %}
+  .custom-newsletter-container {
+    background: white;
+    width: 50%;
+    padding: 50px;
+  }
+
+  .custom-newsletter-container h2, .custom-newsletter-container div {
+    color: #004289;
+  }
+
+  .custom-newsletter-container input {
+    width: 50%;
+  }
+{% endstyle %}
+
 <div id="section-id-{{ section.id }}" class="section-signup">
   {%- assign brightness = section.settings.color_bg | color_brightness -%}
   {%- assign alpha = section.settings.color_bg | color_extract: 'alpha' -%}
   <style type="text/css">
     #section-id-{{ section.id }} {
-      background: {{ section.settings.color_bg }};
+      background-image: url({{ 'newsletter.jpg' | asset_url }});
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 50px;
     }
     {% if brightness < 190 and alpha > 0 %}
     #section-id-{{ section.id }},
@@ -13,7 +32,7 @@
     }
     {% endif %}
   </style>
-  <div class="container strongly-padded-row align-center" data-cc-animate data-cc-animate-delay="0.3s">
+  <div class="container strongly-padded-row align-center custom-newsletter-container" data-cc-animate data-cc-animate-delay="0.3s">
 
     <h2 class="hometitle h4-style in-content">{{ section.settings.title | escape }}</h2>
 
