@@ -16,7 +16,7 @@
 }
 
 .image1 img, .image2 img {
-  height: 75%;
+  height: auto;
   width: 100%;
   object-fit: cover;
   filter: brightness(50%);
