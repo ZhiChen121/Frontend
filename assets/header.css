@@ -39,6 +39,7 @@
 };
 
 .logo-area__right {
+  display: flex;
   flex: 0;
 }
 
