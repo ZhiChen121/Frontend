@@ -72,10 +72,6 @@
   display: none;
 }
 
-#main-nav {
-  border: 0;
-}
-
 .desktop-only .navigation--main {
   border: 0;
 }
