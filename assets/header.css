@@ -31,10 +31,6 @@
   max-width: {{ section.settings.logo_img_width_int }}px;
 }
 
-.logo-area__middle__inner {
-  width: inherit;
-}
-
 .logo-area__right {
   display: flex;
 }
@@ -54,4 +50,8 @@
 
 .cart-link__icon {
   padding-right: 10px;
+}
+
+#main-search {
+  display: none;
 }
