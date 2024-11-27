@@ -1,28 +1,4 @@
-{% style %}
-  .article-rich-text {
-    width: 100%;
-    background-color: #004289;
-  }
-
-  .article-rich-text .container {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    gap: 40px;
-    background-color: #004289;
-  }
-  
-  .rich-text-container {
-    display: flex;
-    align-items: center;
-    color: white;
-    padding: 20px 0px;
-    margin-bottom: 0;
-    gap: 20px;
-    font-weight: bold;
-  };
-
-{% endstyle %}
+{{ 'rich-text.css' | asset_url | stylesheet_tag }}
 
 <div class="article-rich-text">
   <div class="container">
