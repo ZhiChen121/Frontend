@@ -40,8 +40,12 @@
 .logo-area__middle--logo-image {
   /* max-width: {{ section.settings.logo_img_width_int }}px; */
   display: flex;
-  flex: 4;
+  flex: 6;
 };
+
+.logo-area__middle__inner {
+  width: 100%
+}
 
 .logo-area__right {
   display: flex;
