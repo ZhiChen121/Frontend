@@ -2,6 +2,10 @@
   --primary-colour: #004289;
 }
 
+.logo-area {
+  
+}
+
 .show-search {
   padding: 3px;
   width: 100%;
@@ -24,7 +28,7 @@
 } 
 
 .logo-area__left {
-  display: flex;
+  /* display: flex; */
 }
 
 .logo-area__middle--logo-image {
