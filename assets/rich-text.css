@@ -17,10 +17,9 @@
   color: white;
   padding: 20px 0px;
   margin-bottom: 0;
-  gap: 20px;
   font-weight: bold;
 };
 
 .rich-text-title {
-  padding-bottom: 0;
+  margin-bottom: 0;
 }
