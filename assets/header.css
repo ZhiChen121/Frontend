@@ -35,8 +35,8 @@
 .logo-area__middle--logo-image {
   /* max-width: {{ section.settings.logo_img_width_int }}px; */
   display: flex;
-  flex: 4;
-}
+  /* flex: 4; */
+};
 
 .logo-area__right {
   display: flex;
