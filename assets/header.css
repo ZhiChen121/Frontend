@@ -2,8 +2,13 @@
   --primary-colour: #004289;
 }
 
+#pageheader {
+  border: 0;
+}
+
 .logo-area {
   height: 100px;
+  border: 0;
 }
 
 .show-search {
