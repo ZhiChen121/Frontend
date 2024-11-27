@@ -43,7 +43,7 @@
 };
 
 .logo-area__middle__inner {
-  width: inherit;
+  width: auto;
 }
 
 .logo-area__right {
