@@ -30,7 +30,7 @@
 .search-wrapper { 
   position: relative; 
   display: inline-block; 
-  width: 100%;
+  width: 70vw;
 } 
 
 .logo-area__left {
@@ -42,9 +42,6 @@
   display: flex;
   flex: 6;
 };
-
-.logo-area__middle__inner {
-}
 
 .logo-area__right {
   display: flex;
