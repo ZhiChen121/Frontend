@@ -40,7 +40,7 @@
 
 .logo-area__right {
   display: flex;
-  flex: 0;
+  flex: 0 !important;
 }
 
 .cart-link__icon {
