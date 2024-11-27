@@ -50,6 +50,10 @@
   align-items: center;
 }
 
+.cart-link__icon .cart__count {
+  padding: 5px;
+}
+
 ::placeholder {
   color: #004289;
   font-weight: bold;
