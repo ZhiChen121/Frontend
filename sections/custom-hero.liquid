@@ -1,3 +1,5 @@
+{{ 'custom-hero.css' | asset_url | stylesheet_tag }}
+
 <div id="section-id-{{ section.id }}" class="{% unless section.settings.full_width %}container{% endunless %} fully-spaced-row--medium section-id-{{ section.id }}" data-section-type="custom-liquid">
   <div class="custom-html">
     <div class="image-container">
