@@ -28,7 +28,7 @@
 
 .logo_image {
   /* width: {{ section.settings.logo_img_width_int }}px;*/
-  width: 200px;
+  width: 100px;
   height: 100px;
 }
 
