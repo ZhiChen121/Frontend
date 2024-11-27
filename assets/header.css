@@ -71,3 +71,7 @@
 #main-search {
   display: none;
 }
+
+.desktop-only .navigation--main {
+  border: 0;
+}
