@@ -10,13 +10,13 @@
   background-color: #F5F6F4;
 }
 
-/* .search-wrapper span { 
+.search-wrapper span { 
   position: absolute; 
   top: 0; 
   right: 0; 
   cursor: pointer; 
   color: #004289;
-}  */
+} 
 
 .logo-area__left {
   display: flex;
@@ -24,12 +24,6 @@
 
 .logo-area__right {
   display: flex;
-}
-
-.logo_image {
-  /* width: {{ section.settings.logo_img_width_int }}px;*/
-  width: 100px;
-  height: 100px;
 }
 
 .logo-area__middle--logo-image {
