@@ -79,3 +79,8 @@
 .desktop-only .navigation--main {
   border: 0;
 }
+
+.navigation__link {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
