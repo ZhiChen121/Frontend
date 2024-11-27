@@ -52,7 +52,8 @@
 
 .cart-link__icon .cart__count {
   padding: 15px;
-  width: 30px
+  width: 60px
+  font-weight: bold
 }
 
 ::placeholder {
