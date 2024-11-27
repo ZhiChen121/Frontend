@@ -28,7 +28,7 @@
 } 
 
 .logo-area__left {
-  flex: 1;
+  flex: 0 0 100px;
 }
 
 .logo-area__middle--logo-image {
@@ -38,7 +38,6 @@
 
 .logo-area__right {
   display: flex;
-  flex: 1;
 }
 
 ::placeholder {
