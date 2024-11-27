@@ -20,3 +20,7 @@
   gap: 20px;
   font-weight: bold;
 };
+
+.rich-text-title {
+  padding-bottom: 0;
+}
