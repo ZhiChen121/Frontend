@@ -30,11 +30,6 @@
   display: flex;
 }
 
-#pageheader .logo-area__middle {
-  display: flex;
-  flex-grow: 2;
-}
-
 .logo-area__right {
   display: flex;
 }
