@@ -1,6 +1,7 @@
 .image-container {
   display: flex;
   position: relative;
+  height: 750px;
 }
 
 .image1, .image2 {
