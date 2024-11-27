@@ -2,6 +2,10 @@
   --primary-colour: #004289;
 }
 
+.search-wrapper {
+  display: flex;
+}
+
 .show-search {
   padding: 3px;
   width: 100%;
