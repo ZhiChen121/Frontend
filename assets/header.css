@@ -38,6 +38,10 @@
   flex: 4;
 };
 
+.logo-area__right {
+  flex: 0;
+}
+
 .cart-link__icon {
   padding-right: 10px;
   display: flex;
