@@ -40,10 +40,10 @@
 .logo-area__middle--logo-image {
   display: flex;
   flex: 6;
+  width: auto;
 };
 
 .logo-area__middle__inner {
-  width: auto;
 }
 
 .logo-area__right {
