@@ -30,6 +30,7 @@
 .search-wrapper { 
   position: relative; 
   display: inline-block; 
+  width: 100%;
 } 
 
 .logo-area__left {
@@ -40,7 +41,6 @@
 .logo-area__middle--logo-image {
   display: flex;
   flex: 6;
-  width: auto;
 };
 
 .logo-area__middle__inner {
