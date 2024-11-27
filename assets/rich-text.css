@@ -20,6 +20,7 @@
   font-weight: bold;
 };
 
-.rich-text-title {
+.rich-text-container .rich-text-title {
   margin-bottom: 0;
+  font-size: 24px;
 }
