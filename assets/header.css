@@ -32,9 +32,8 @@
 }
 
 .logo-area__middle__inner {
-  width: 100%;
+  width: inherit;
 }
-
 
 .logo-area__right {
   display: flex;
