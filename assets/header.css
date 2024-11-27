@@ -38,7 +38,7 @@
   flex: 4;
 };
 
-#pageheader .logo-area__right {
+.logo-area__right {
   display: flex;
   flex: 0 0 0;
 }
