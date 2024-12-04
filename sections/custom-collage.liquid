@@ -1,32 +1,28 @@
 {{ 'custom-collage.css' | asset_url | stylesheet_tag }}
 
 <div class="gallery-container">
-  <div class="gallery-column-1">
-    <div class="gallery-container">
-      <img src="{{ 'collection-homepage.jpg' | asset_url }}">
-      <div class="gallery-text">
-        <h1>HIKING ESSENTIALS</h1>
-        <p>Nullan quis risus eget urna mollis ornare vel eu leo.</p>
-        <button>SHOP HIKING</button>
-      </div>
-    </div>
-    <div class="gallery-container">
-      <img src="{{ 'collection-homepage-2.jpg' | asset_url }}">
-      <div class="gallery-text">
-        <h1>ACCESSORIES</h1>
-        <p>Curabitur blandit tempus porttitor. Maecenas faucibus mollis.</p>
-        <button>SHOP ACCESSORIES</button>
-      </div>
+  <div class="gallery-container-1">
+    <img src="{{ 'collection-homepage.jpg' | asset_url }}">
+    <div class="gallery-text">
+      <h1>HIKING ESSENTIALS</h1>
+      <p>Nullan quis risus eget urna mollis ornare vel eu leo.</p>
+      <button>SHOP HIKING</button>
     </div>
   </div>
-  <div class="gallery-column-2">
-    <div class="gallery-container">
-      <img src="{{ 'collection-homepage-3.jpg' | asset_url }}">
-      <div class="gallery-text">
-        <h1>OUTDOOR ESSENTIALS</h1>
-        <p>Curabitur blandit tempus porttitor. Maecenas faucibus mollis.</p>
-        <button>SHOP OUTDOOR ESSENTIALS</button>
-      </div>
+  <div class="gallery-container-2">
+    <img src="{{ 'collection-homepage-2.jpg' | asset_url }}">
+    <div class="gallery-text">
+      <h1>ACCESSORIES</h1>
+      <p>Curabitur blandit tempus porttitor. Maecenas faucibus mollis.</p>
+      <button>SHOP ACCESSORIES</button>
+    </div>
+  </div>
+  <div class="gallery-container-3">
+    <img src="{{ 'collection-homepage-3.jpg' | asset_url }}">
+    <div class="gallery-text">
+      <h1>OUTDOOR ESSENTIALS</h1>
+      <p>Curabitur blandit tempus porttitor. Maecenas faucibus mollis.</p>
+      <button>SHOP OUTDOOR ESSENTIALS</button>
     </div>
   </div>
 </div>
