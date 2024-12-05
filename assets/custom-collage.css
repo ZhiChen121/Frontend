@@ -41,6 +41,10 @@
   color: white;
 }
 
+.gallery-text p {
+  color: white;
+}
+
 .gallery-text button {
   background-color: transparent;
   border-radius: 0px;
