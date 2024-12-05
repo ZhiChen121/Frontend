@@ -92,6 +92,10 @@
   height: 50%;
 }
 
+.gallery-container-1 {
+  height: auto;
+}
+
 .gallery-container-2 {
   grid-column: 1;
   grid-row: 2;
