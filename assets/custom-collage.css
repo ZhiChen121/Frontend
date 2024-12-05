@@ -90,10 +90,7 @@
   grid-column: 1;
   grid-row: 1;
   height: 50%;
-}
-
-.gallery-container-1 {
-  height: 50%;
+  display: flex;
 }
 
 .gallery-container-2 {
