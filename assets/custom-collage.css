@@ -33,6 +33,7 @@
 
 .gallery-container-1 .gallery-text, .gallery-container-2 .gallery-text {
   width: 100%;
+  padding: 20px;
 }
 
 .gallery-container-3 {
