@@ -103,6 +103,7 @@
 }
 
 .gallery-container-1 img, .gallery-container-2 img {
+  min-width: 50%;
   width: 50%;
 }
 
