@@ -92,6 +92,10 @@
   display: flex;
 }
 
+.gallery-container-1 .gallery-text {
+  width: 100%;
+}
+
 .gallery-container-2 {
   grid-column: 1;
   grid-row: 2;
