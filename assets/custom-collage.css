@@ -97,6 +97,7 @@
   grid-column: 1;
   grid-row: 2;
   height:50%;
+  display: flex;
 }
 
 .gallery-container-3 {
