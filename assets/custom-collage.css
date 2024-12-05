@@ -98,10 +98,13 @@
   display: flex;
 }
 
+.gallery-container-1 img, .gallery-container-2 img {
+  width: 50%;
+}
+
 .gallery-container-3 {
   grid-column: 2;
   grid-row: 1/3;
-  height: 100%;
 }
 
 /* .gallery-container img {
