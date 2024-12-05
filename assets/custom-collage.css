@@ -42,7 +42,7 @@
 }
 
 .gallery-text button {
-  background-color: none;
+  background-color: transparent;
   border-radius: 0px;
   border: 1px solid white;
   font-weight: 600;
