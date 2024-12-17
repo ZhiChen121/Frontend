@@ -64,7 +64,7 @@
       "settings": {
         "title": "Featured collection",
         "collection": "homepage-collection",
-        "show_vendor": false,
+        "show_vendor": true,
         "enable_carousel": true,
         "grid": 4,
         "rows": 1,
