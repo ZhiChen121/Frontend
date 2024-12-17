@@ -25,3 +25,9 @@
 .product-price + .product-price__compare {
   color: #333333;
 }
+
+..product-link .vendor {
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  color: #004289;
+}
