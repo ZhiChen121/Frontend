@@ -1,8 +1,25 @@
-.section-featured-collection .hometitle {
+.section-featured-collection .hometitle span {
   text-transform: capitalize;
   font-weight: bold;
+  color: #004289;
 }
 
 .use-alt-bg {
   background-color: white;
+}
+
+.product-block__title {
+  color: #004289;
+}
+
+.product-price__compare {
+  color: #333333;
+}
+
+.product-price__amount--on-sale {
+  color: #DA394C;
+}
+
+.product-price__amount--on-sale + .product-price__compare {
+  color: #004289;
 }
