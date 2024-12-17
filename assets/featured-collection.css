@@ -1,7 +1,12 @@
+:root {
+  --text-color: #004289;
+  --sale-color: #DA394C;
+}
+
 .section-featured-collection .hometitle span {
   text-transform: capitalize;
   font-weight: bold;
-  color: #004289;
+  color: var(--text-color);
 }
 
 .use-alt-bg {
@@ -9,17 +14,18 @@
 }
 
 .product-block__title {
-  color: #004289;
+  color: var(--text-color);
   font-weight: 500;
 }
 
 .product-price__amount--on-sale {
-  color: #DA394C;
+  color: var(--sale-color);
   font-weight: 500;
 }
 
 .product-price__amount--on-sale + .product-price__compare {
-  color: #004289;
+  color: var(--text-color);
+  font-weight: 600;
 }
 
 .product-price + .product-price__compare {
