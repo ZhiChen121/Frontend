@@ -10,10 +10,7 @@
 
 .product-block__title {
   color: #004289;
-}
-
-.product-price__compare {
-  color: #333333;
+  font-weight: 500;
 }
 
 .product-price__amount--on-sale {
@@ -22,4 +19,8 @@
 
 .product-price__amount--on-sale + .product-price__compare {
   color: #004289;
+}
+
+.product-price + .product-price__compare {
+  color: #333333;
 }
