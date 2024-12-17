@@ -1,12 +1,8 @@
-.section-featured-collection {
-  background-color: white;
-};
-
 .section-featured-collection hometitle {
   text-transform: capitalize;
   font-weight: bold;
 }
 
 .use-alt-bg {
-  background-color: none;
+  background-color: white;
 }
