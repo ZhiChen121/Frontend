@@ -26,13 +26,14 @@
 .product-price__amount--on-sale + .product-price__compare {
   color: var(--text-color);
   font-weight: 600;
+  opacity: 1;
 }
 
 .product-price + .product-price__compare {
   color: #333333;
 }
 
-..product-link .vendor {
+.product-link .vendor {
   text-transform: uppercase;
   letter-spacing: 0.5em;
   color: #004289;
