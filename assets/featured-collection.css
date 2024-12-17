@@ -15,6 +15,7 @@
 
 .product-price__amount--on-sale {
   color: #DA394C;
+  font-weight: 500;
 }
 
 .product-price__amount--on-sale + .product-price__compare {
