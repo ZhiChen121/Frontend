@@ -118,9 +118,9 @@
                 {% endif %}
                 <span class="product-price__item product-price__amount {% if cheapest_variant.compare_at_price > cheapest_variant.price %}product-price__amount--on-sale{% endif %} theme-money">
                   {%- if settings.product_currency_code_enabled -%}
-                    from {{ cheapest_variant.price | money_with_currency }}
+                    {{ cheapest_variant.price | money_with_currency }}
                   {%- else -%}
-                    from {{ cheapest_variant.price | money }}
+                    {{ cheapest_variant.price | money }}
                   {%- endif -%}
                 </span>
                 {% if cheapest_variant.compare_at_price > cheapest_variant.price %}
