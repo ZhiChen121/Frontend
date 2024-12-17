@@ -120,7 +120,7 @@
                   {%- if settings.product_currency_code_enabled -%}
                     from {{ cheapest_variant.price | money_with_currency }}
                   {%- else -%}
-                    {{ cheapest_variant.price | money }}
+                    from {{ cheapest_variant.price | money }}
                   {%- endif -%}
                 </span>
                 {% if cheapest_variant.compare_at_price > cheapest_variant.price %}
