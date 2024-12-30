@@ -41,8 +41,9 @@
   margin-bottom: 20px;
 }
 
-.column span {
-  font-size: 40px;
+.column svg {
+  height: 60px;
+  width: 60px;
 }
 
 .column h2 {
