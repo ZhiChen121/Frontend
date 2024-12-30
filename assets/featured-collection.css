@@ -19,6 +19,10 @@
   font-weight: 500;
 }
 
+.product-price .product-price__compare {
+  color: var(--normal-color);
+}
+
 .product-price__amount--on-sale {
   color: var(--sale-color);
   font-weight: 500;
@@ -28,10 +32,6 @@
   color: var(--text-color);
   font-weight: 500;
   opacity: 1;
-}
-
-.product-price .product-price__compare {
-  color: var(--normal-color);
 }
 
 .product-link .vendor {
