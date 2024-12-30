@@ -19,7 +19,7 @@
   font-weight: 500;
 }
 
-.product-price .product-price__compare {
+.product-price:has(:only-child) {
   color: var(--normal-color);
 }
 
