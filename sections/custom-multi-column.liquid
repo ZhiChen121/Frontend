@@ -1,61 +1,4 @@
-{% style %}
-  .multi-column-section {
-    margin-top: 80px;
-    margin-bottom: 80px;
-  }
-  
-  .multi-columns {
-    display: flex;
-    gap: 25px;
-  }
-
-  .column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .multi-column-title, .multi-column-button {
-    text-align: center;
-  }
-
-  .multi-column-title {
-    margin-bottom: 50px;
-  }
-
-  .multi-column-title h1 {
-    font-weight: bold;
-    font-size: 60px;
-  }
-
-  .multi-column-title h2 {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-
-  .column span {
-    font-size: 40px;
-  }
-
-  .column h2 {
-    font-weight: bold;
-  }
-
-  .multi-column-button {
-    margin-top: 80px;
-  }
-
-  .multi-column-button button {
-    background-color: white;
-    border: 2px solid #013299;
-    color: #013299;
-    padding: 20px 90px;
-    font-weight: bold;
-  }
-{% endstyle %}
+{{ 'custom-multi-column.css' | asset_url | stylesheet_tag }}
 
 <div class="multi-column-section">
   <div class="multi-column-title">
@@ -89,7 +32,6 @@
       LEARN MORE
     </button>
   </div>
-
 </div>
 
 {% schema %}
