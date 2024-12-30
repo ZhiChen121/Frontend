@@ -1,6 +1,7 @@
 :root {
   --text-color: #004289;
   --sale-color: #DA394C;
+  --normal-color: #333333;
 }
 
 .section-featured-collection .hometitle span {
@@ -29,8 +30,8 @@
   opacity: 1;
 }
 
-.product-price + .product-price__compare {
-  color: #333333;
+.product-price > .product-price__compare {
+  color: var(--normal-color);
 }
 
 .product-link .vendor {
