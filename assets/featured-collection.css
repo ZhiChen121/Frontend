@@ -30,7 +30,7 @@
   opacity: 1;
 }
 
-.product-price > .product-price__compare {
+.product-price .product-price__compare {
   color: var(--normal-color);
 }
 
