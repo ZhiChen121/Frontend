@@ -21,6 +21,7 @@
 
 .product-price:has(:only-child) {
   color: var(--normal-color);
+  font-weight: 500;
 }
 
 .product-price__amount--on-sale {
