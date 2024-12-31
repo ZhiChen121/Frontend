@@ -28,12 +28,8 @@
 
 #home_newsletter_signup .signup-form__inline-container {
   width: 100%;
-  display: flex;
 }
 
 .signup-form__inline-container .email_address {
   display: flex;
-  flex-direction: column;
-  width: 50%;
-  align-items: start;
 }
