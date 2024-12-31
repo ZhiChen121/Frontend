@@ -61,11 +61,6 @@
 .gallery-container-3 {
   grid-column: 2;
   grid-row: 1/3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  text-align: center;
 }
 
 /* .gallery-container-3 img {
@@ -74,7 +69,6 @@
 }
 
 .gallery-container-3 .gallery-text {
-  position: absolute;
   display:flex;
   flex-direction: column;
   justify-content: center;
