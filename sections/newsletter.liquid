@@ -1,18 +1,4 @@
-{% style %}
-  .custom-newsletter-container {
-    background: white;
-    width: 50%;
-    padding: 50px;
-  }
-
-  .custom-newsletter-container h2, .custom-newsletter-container div {
-    color: #004289;
-  }
-
-  .custom-newsletter-container input {
-    width: 50%;
-  }
-{% endstyle %}
+{{ 'newsletter.css' | asset_url | stylesheet_tag }}
 
 <div id="section-id-{{ section.id }}" class="section-signup">
   {%- assign brightness = section.settings.color_bg | color_brightness -%}
