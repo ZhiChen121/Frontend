@@ -34,6 +34,10 @@
 .gallery-container-1 .gallery-text, .gallery-container-2 .gallery-text {
   width: 100%;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .gallery-text h1 {
@@ -56,8 +60,6 @@
   grid-column: 2;
   grid-row: 1/3;
 }
-
-
 
 .gallery-container-3 .gallery-text p {
   /* position: relative;
