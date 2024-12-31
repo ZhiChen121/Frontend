@@ -10,7 +10,7 @@
 
 .section-signup h2 {
   color: #333333;
-  margin: 0 0 20px;
+  margin: 0 0 5px;
   font-size: 36px;
   font-weight: 700;
 }
@@ -34,4 +34,6 @@
 .signup-form__inline-container .email_address {
   display: flex;
   flex-direction: column;
+  width: 50%;
+  align-items: start;
 }
