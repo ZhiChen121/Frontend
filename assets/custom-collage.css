@@ -68,10 +68,13 @@
   height: 100%;
 }
 
-.gallery-container-3 .gallery-text p, .gallery-container-3 .gallery-text h1, .gallery-container-3 .gallery-text button {
+.gallery-container-3 .gallery-text {
   position: relative;
   display:flex;
   justify-content: center;
   align-items: center;
+}
+
+.gallery-container-3 .gallery-text p, .gallery-container-3 .gallery-text h1, .gallery-container-3 .gallery-text button {
   color: black;
 }
