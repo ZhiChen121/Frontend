@@ -15,6 +15,10 @@
   font-weight: 700;
 }
 
+.section-signup .subtitle {
+  margin-bottom: 0;
+}
+
 .section-signup p {
   color: #333333;
   opacity: 0.6;
@@ -23,13 +27,16 @@
 }
 
 #home_newsletter_signup {
-  margin-top: 50px; 
+  margin-top: 25px; 
 }
 
 #home_newsletter_signup .signup-form__inline-container {
   width: 100%;
 }
 
-.signup-form__inline-container label {
-  /* display: block; */
+#home_newsletter_signup label {
+  display: block;
+  text-align: start;
+  color: #004289;
+  font-weight: 500;
 }
