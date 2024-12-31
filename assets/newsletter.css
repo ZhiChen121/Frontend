@@ -34,7 +34,7 @@
   width: 100%;
 }
 
-/* .signup-form__inline-container .email_address {
+.signup-form__inline-container .email_address {
   display: flex;
   flex-direction: column;
-} */
+}
