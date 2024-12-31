@@ -19,6 +19,7 @@
   color: #333333;
   opacity: 0.6;
   font-weight: 400;
+  font-size: 16px;
 }
 
 #home_newsletter_signup {
@@ -27,4 +28,9 @@
 
 #home_newsletter_signup .signup-form__inline-container {
   width: 100%;
+}
+
+.signup-form__inline-container .email_address {
+  display: flex;
+  flex-direction: column;
 }
