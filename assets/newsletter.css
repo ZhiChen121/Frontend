@@ -26,11 +26,15 @@
   margin-top: 50px; 
 }
 
+.signup-form__inline-container {
+  display: flex;
+}
+
 #home_newsletter_signup .signup-form__inline-container {
   width: 100%;
 }
 
-.signup-form__inline-container .email_address {
+/* .signup-form__inline-container .email_address {
   display: flex;
   flex-direction: column;
-}
+} */
