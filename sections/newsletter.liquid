@@ -40,18 +40,18 @@
           {% endif %}
           <input type="hidden" name="contact[tags]" value="prospect,newsletter"/>
           <div class="signup-form__inline-container">
+            <label>Email Address</label>
             <div class="email_address">
-              <label>Email Address</label>
               <input type="email"
                 class="signup-form__email"
                 value=""
                 name="contact[email]"
                 aria-label="{{ 'layout.signup.input_label' | t | escape }}"
                 required />
+              <button class="button signup-form__button" type="submit">
+                {{- 'layout.signup.submit' | t -}}
+              </button>
             </div>
-            <button class="button signup-form__button" type="submit">
-              {{- 'layout.signup.submit' | t -}}
-            </button>
           </div>
         {% endif %}
       {% endform %}
