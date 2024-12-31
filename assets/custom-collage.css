@@ -41,8 +41,9 @@
 }
 
 .gallery-text h1 {
-  font-weight: bold;
+  font-weight: 700;
   color: white;
+  font-size: 36px;
 }
 
 .gallery-text p {
