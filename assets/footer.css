@@ -52,16 +52,20 @@ h6#newsletter-title {
   color: white;
 }
 
+.section-footer__text {
+  color: #CCD1CE;
+}
+
 .btn--signup-form__button {
   width: 100%;
   background-color: #032C58;
   font-weight: bold;
 }
 
- .section-footer-container .signup-form label {
-   color: white;
-   margin-bottom: 5px;
- }
+.section-footer-container .signup-form label {
+ color: white;
+ margin-bottom: 5px;
+}
 
 .social-icons-footer {
   margin-top: 10px;
