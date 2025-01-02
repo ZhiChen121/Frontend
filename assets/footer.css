@@ -78,3 +78,11 @@ h6#newsletter-title {
   padding: 10px;
   border-radius: none;
 }
+
+#custom-footer label {
+  margin-bottom: 2px;
+}
+
+.signup-form__email {
+  border-radius: 0;
+}
