@@ -9,7 +9,7 @@
   flex-direction: column;
 }
 
-#custom-footer .footer-info-links a {
+#custom-footer .footer-info-links a, .footer-contact p {
   color: #333333;
 }
 
