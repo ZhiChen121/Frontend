@@ -9,6 +9,10 @@
   flex-direction: column;
 }
 
+.footer-info-links a {
+  color: #333333;
+}
+
 .footer-info-links h1 {
   font-weight: bold;
   margin-bottom: 20px;
