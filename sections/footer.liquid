@@ -1,6 +1,6 @@
 {{ 'footer.css' | asset_url | stylesheet_tag }}
 
-<div data-section-type="footer">
+<div id="custom-footer" data-section-type="footer">
   {% if section.blocks != blank %}
     <div class="container container--no-max section-footer__row-container">
       <div class="section-footer-container" data-num-blocks="{{ section.blocks.size }}">
