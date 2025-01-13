@@ -82,3 +82,8 @@ h6#newsletter-title {
 #custom-footer .signup-form__email {
   border-radius: 0;
 }
+
+.bottom-footer-custom-section .section-footer__row {
+  display: flex;
+  justify-content: space-evenly;
+}
