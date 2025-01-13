@@ -17,7 +17,8 @@
 .product-block__title {
   color: var(--text-color);
   font-weight: 500;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
+  text-transform: capitalize;
 }
 
 .product-price:has(:only-child) {
