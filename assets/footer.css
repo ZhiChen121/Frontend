@@ -86,5 +86,13 @@ h6#newsletter-title {
 .bottom-footer-custom-section .section-footer__row {
   display: flex;
   justify-content: space-evenly;
+}
+
+.bottom-footer-custom-section .copy {
   font-size: 16px;
+  color: #333333;
+}
+
+.bottom-footer-custom-section .built-by b{
+  color: #333333;
 }
