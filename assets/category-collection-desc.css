@@ -1,0 +1,19 @@
+.collection-desc-container {
+  background-color: #F5F6F4;
+  text-align: center;
+  padding: 80px
+}
+
+.collection-desc-container h1, .collection-desc-container p {
+  color: #004289;
+}
+
+.collection-desc-container h1 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.collection-desc-container p {
+  width: 60%;
+  margin: auto;
+}
