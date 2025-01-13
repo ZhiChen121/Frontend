@@ -86,4 +86,5 @@ h6#newsletter-title {
 .bottom-footer-custom-section .section-footer__row {
   display: flex;
   justify-content: space-evenly;
+  font-size: 16px;
 }
