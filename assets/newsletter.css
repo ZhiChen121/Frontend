@@ -32,6 +32,7 @@
 
 #home_newsletter_signup .signup-form__inline-container {
   width: 100%;
+  gap: 15px;
 }
 
 #home_newsletter_signup label {
