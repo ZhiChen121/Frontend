@@ -15,6 +15,7 @@
     },
     "main": {
       "type": "main-collection",
+      "disabled": true,
       "custom_css": [
         "span.product-price__amount {color: #da394c; font-weight: bold;}",
         ".product-price__compare,.product-block__title {color: #004289; font-weight: bold;}",
@@ -51,6 +52,21 @@
         "subcoll_gall_overlay_style": "shadow",
         "subcoll_gall_text_alignment": "center center",
         "subcoll_gall_mobile_layout": "2"
+      }
+    },
+    "1737387886b4a10d08": {
+      "type": "apps",
+      "blocks": {
+        "boost_ai_search_discovery_filter_product_list_ssr_AGia6Y": {
+          "type": "shopify://apps/boost-ai-search-discovery/blocks/filter-product-list-ssr/7fc998ae-a150-4367-bab8-505d8a4503f7",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "boost_ai_search_discovery_filter_product_list_ssr_AGia6Y"
+      ],
+      "settings": {
+        "full_width": false
       }
     },
     "category_collection_desc_XTaYnb": {
@@ -108,6 +124,7 @@
   "order": [
     "category_collection_hero_YBLVMD",
     "main",
+    "1737387886b4a10d08",
     "category_collection_desc_XTaYnb",
     "newsletter_VWjNCa",
     "custom_multi_column_LCtYam",
