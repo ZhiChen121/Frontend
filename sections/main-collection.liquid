@@ -68,7 +68,6 @@
   {% capture subcollection_html %}
     {% if section.settings.subcoll_style == 'buttons' %}
       <div class="container">
-        another test
         <div class="subcollection-links subcollection-links--buttons align-center lightly-spaced-row-above{% if header_image_enabled %} image-overlay__over{% endif %}">
           {%- for link in current_link_parent.links -%}
             {%- unless link.object.handle == collection.handle or link.type != 'collection_link' -%}
