@@ -1,0 +1,133 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "category_collection_hero_YBLVMD": {
+      "type": "category-collection-hero",
+      "settings": {}
+    },
+    "main": {
+      "type": "main-collection",
+      "disabled": true,
+      "custom_css": [
+        "span.product-price__amount {color: #da394c; font-weight: bold;}",
+        ".product-price__compare,.product-block__title {color: #004289; font-weight: bold;}",
+        ".product-block__title {font-weight: 500;}",
+        ".vendor {color: #004289; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;}"
+      ],
+      "settings": {
+        "show_image_behind_heading": true,
+        "heading_image_height": "medium",
+        "overlay_style": "shadow",
+        "coll_num_per_page_int": 16,
+        "grid": 3,
+        "show_vendor": true,
+        "show_total": false,
+        "coll_desc_pos": "above",
+        "enable_filtering": true,
+        "collapse_tag_sidebar_by_default": false,
+        "collapse_filters_method": "over-12",
+        "show_filter_counts": true,
+        "show_disabled_filters": true,
+        "ajax_products": true,
+        "auto_apply_hide_unavailable": false,
+        "enable_sticky_filter": true,
+        "filter_two_columns": false,
+        "coll_show_sort": true,
+        "coll_show_feat": false,
+        "enable_subcoll": true,
+        "subcoll_menu": "main-menu",
+        "subcoll_style": "buttons",
+        "subcoll_gall_shape": "sq",
+        "image_position": "center center",
+        "subcoll_gall_enable_margin": true,
+        "subcoll_gall_full_width": false,
+        "subcoll_gall_overlay_style": "shadow",
+        "subcoll_gall_text_alignment": "center center",
+        "subcoll_gall_mobile_layout": "2"
+      }
+    },
+    "1737387886b4a10d08": {
+      "type": "apps",
+      "blocks": {
+        "boost_ai_search_discovery_filter_product_list_ssr_AGia6Y": {
+          "type": "shopify://apps/boost-ai-search-discovery/blocks/filter-product-list-ssr/7fc998ae-a150-4367-bab8-505d8a4503f7",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "boost_ai_search_discovery_filter_product_list_ssr_AGia6Y"
+      ],
+      "settings": {
+        "full_width": true
+      }
+    },
+    "category_collection_desc_XTaYnb": {
+      "type": "category-collection-desc",
+      "settings": {}
+    },
+    "newsletter_VWjNCa": {
+      "type": "newsletter",
+      "custom_css": [
+        ".section-newsletter h2 {font-weight: bold; font-size: 40px; color: #004289;}",
+        ".section-newsletter p {color: #004289; opacity: 0.5;}",
+        ".section-sign .signup-form__email {width: 50%;}",
+        ".signup-form__button {width: 50%; font-weight: bold;}"
+      ],
+      "settings": {
+        "title": "Join Our Newsletter",
+        "subheading": "<p>Be the first to know about our offers, events & new arrivals</p>",
+        "color_bg": "#ffffff"
+      }
+    },
+    "custom_multi_column_LCtYam": {
+      "type": "custom-multi-column",
+      "settings": {}
+    },
+    "rich_text_9eCY6k": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_bF6CEk": {
+          "type": "heading",
+          "settings": {
+            "title": "Rich text",
+            "use_h1": false
+          }
+        },
+        "text_FM6UaJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your store with your customers. Describe products, share announcements, or welcome customers to your store.</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_bF6CEk",
+        "text_FM6UaJ"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    }
+  },
+  "order": [
+    "category_collection_hero_YBLVMD",
+    "main",
+    "1737387886b4a10d08",
+    "category_collection_desc_XTaYnb",
+    "newsletter_VWjNCa",
+    "custom_multi_column_LCtYam",
+    "rich_text_9eCY6k"
+  ]
+}
