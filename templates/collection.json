@@ -15,7 +15,6 @@
     },
     "main": {
       "type": "main-collection",
-      "disabled": true,
       "custom_css": [
         "span.product-price__amount {color: #da394c; font-weight: bold;}",
         ".product-price__compare,.product-block__title {color: #004289; font-weight: bold;}",
