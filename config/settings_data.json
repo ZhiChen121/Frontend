@@ -1022,7 +1022,7 @@
     "prod_thumb_text_align": "left",
     "prod_thumb_hover_image": true,
     "prod_thumb_show_subtitle": true,
-    "quickbuy_style": "whole",
+    "quickbuy_style": "button",
     "prod_block_label_loc": "top left",
     "prod_reduction_show": false,
     "prod_reduction_type": "percent",
