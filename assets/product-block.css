@@ -1,0 +1,6 @@
+.price-label--sale {
+  text-transform: uppercase;
+  color: white;
+  background-color: #DA394C;
+  letter-spacing: 1px;
+}
