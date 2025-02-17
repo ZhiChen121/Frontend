@@ -63,13 +63,13 @@
       "custom_css": [],
       "settings": {
         "title": "Featured collection",
-        "collection": "homepage-collection",
+        "collection": "automated-collection",
         "show_vendor": true,
         "enable_carousel": true,
         "grid": 4,
         "rows": 1,
         "use_alt_bg": true,
-        "show_view_all": true,
+        "show_view_all": false,
         "full_width": true
       }
     },
