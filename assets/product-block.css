@@ -4,8 +4,15 @@
   background-color: #DA394C;
   letter-spacing: 1px;
   font-weight: 700;
-  width: 100%;
-  display: inline-block;
   font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  .product-block .image-cont .price-label--sale {
+      display: block;
+      width: 100%;
+      position: absolute;
+      bottom: 10px;
+  }
 }
 
