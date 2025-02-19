@@ -61,3 +61,17 @@
   font-weight: bold;
   border-radius: 0%;
 }
+
+@media (max-width: 768px) {
+  .image-container {
+    flex-direction: column;
+  }
+
+  .image1 {
+    width: 100%;
+  }
+
+  .image2 {
+    width: 100%;
+  }
+}
