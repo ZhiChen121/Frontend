@@ -90,8 +90,16 @@
     grid-row: 2;
   }
 
+  .search-wrapper {
+    margin: 0px 15px;
+  }
+
   .logo-area__right {
     grid-column: 2; 
     grid-row: 1;
+  }
+
+  .search-wrapper span {
+    top: 0px;
   }
 } 
