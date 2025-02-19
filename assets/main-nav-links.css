@@ -1,7 +1,3 @@
-.navigation__tier-1 {
-  padding-bottom: 10px !important;
-}
-
 @media (min-width: 768px) {
   .navigation .navigation__tier-1 > .navigation__item > .navigation__link::before {
     content: none;
