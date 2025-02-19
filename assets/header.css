@@ -72,8 +72,9 @@
 
 @media (max-width: 768px) {
   .cart__count {
-    visibility: hidden;
+    display: none;
   }
+  
   .logo-area {
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: auto auto;
