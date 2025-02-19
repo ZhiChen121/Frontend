@@ -10,29 +10,6 @@
   display: flex;
 }
 
-.logo-area__middle__inner {
-  width: 100%;
-}
-
-.show-search {
-  width: 100%;
-  border: none;
-  padding: 10px;
-  background-color: #F5F6F4;
-}
-
-.search-wrapper { 
-  position: relative; 
-} 
-
-.search-wrapper span { 
-  position: absolute; 
-  top: 5px; 
-  right: 5px; 
-  cursor: pointer; 
-  color: #004289;
-} 
-
 .logo-area__left {
   display: flex;
   flex: 0 0.5 100px;
@@ -103,6 +80,29 @@
 .logo-area__right {
   grid-column: 3;
 }
+
+.logo-area__middle__inner {
+  width: 100%;
+}
+
+.show-search {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  background-color: #F5F6F4;
+}
+
+.search-wrapper { 
+  position: relative; 
+} 
+
+.search-wrapper span { 
+  position: absolute; 
+  top: 5px; 
+  right: 5px; 
+  cursor: pointer; 
+  color: #004289;
+} 
 
 @media (max-width: 768px) {
   .cart__count {
