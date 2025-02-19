@@ -104,6 +104,11 @@
   color: #004289;
 } 
 
+.logo__area__right__inner {
+  width: 100%;
+  justify-content: space-evenly;
+}
+
 @media (max-width: 768px) {
   .cart__count {
     visibility: hidden;
