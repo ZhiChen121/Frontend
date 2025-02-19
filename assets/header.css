@@ -2,33 +2,34 @@
   --primary-colour: #004289;
 }
 
-#pageheader {
-  border: 0;
-}
-
 .logo-area {
   height: 80px;
   border: 0;
 }
 
+.logo-area__middle--logo-image {
+  display: flex;
+};
+
+.logo-area__middle__inner {
+  width: 100%;
+}
+
 .show-search {
-  padding: 3px;
   width: 100%;
   border: none;
-  padding: 5px 100px 5px 5px;
+  padding: 10px;
   background-color: #F5F6F4;
 }
 
 .search-wrapper { 
   position: relative; 
-  display: inline-block; 
-  width: 80vw;
 } 
 
 .search-wrapper span { 
   position: absolute; 
-  top: 0; 
-  right: 0; 
+  top: 5px; 
+  right: 5px; 
   cursor: pointer; 
   color: #004289;
 } 
@@ -38,10 +39,6 @@
   flex: 0 0.5 100px;
 }
 
-.logo-area__middle--logo-image {
-  display: flex;
-  flex: 6;
-};
 
 .logo-area__right {
   display: flex;
