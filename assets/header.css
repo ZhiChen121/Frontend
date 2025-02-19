@@ -32,9 +32,7 @@
   width: 65px;
 }
 
-::placeholder {
-  color: #004289;
-}
+
 
 .cart-link__icon svg, .cart__count, .outline svg {
   color: var(--primary-colour);
@@ -90,6 +88,10 @@
   border: none;
   padding: 10px;
   background-color: #F5F6F4;
+}
+
+.show-search::placeholder {
+  color: #004289;
 }
 
 .search-wrapper { 
