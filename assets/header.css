@@ -93,4 +93,9 @@
   .cart__count {
     visibility: hidden;
   }
+
+  .logo-area__middle {
+    display: block;
+  }
+  
 } 
