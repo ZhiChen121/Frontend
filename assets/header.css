@@ -88,3 +88,9 @@
 #main-nav {
   margin-bottom: 10px;
 }
+
+@media (min-width: 768px) {
+  .cart__count {
+    visibility: visible;
+  }
+} 
