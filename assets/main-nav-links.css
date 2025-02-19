@@ -4,6 +4,6 @@
 
 @media (min-width: 768px) {
   .navigation .navigation__tier-1 > .navigation__item > .navigation__link::before {
-    background-color: none;
+    content: none;
   }
 }
