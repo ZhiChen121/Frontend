@@ -1050,10 +1050,10 @@
         ],
         "settings": {
           "logo": "shopify://shop_images/7eae887b52a3cd43cba57f8f2fd8f191.jpg",
-          "logo_img_width_int": 145,
+          "logo_img_width_int": 140,
           "mobile_logo_img_width_int": 115,
-          "logo_h1": true,
-          "enable_sticky": true,
+          "logo_h1": false,
+          "enable_sticky": false,
           "enable_transparent": false,
           "transparent_color": "#ffffff",
           "menu_linklist": "symmetry-menu",
