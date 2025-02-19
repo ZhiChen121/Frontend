@@ -80,9 +80,14 @@
   border: 0;
 }
 
+.logo__image {
+  height: 117px;
+  width: 146px;
+}
+
 .logo-area {
   display: grid;
-  grid-template-columns: 1fr 4fr 1fr; 
+  grid-template-columns: 1fr 6fr 1fr; 
   grid-template-rows: auto;
   border: 0;
 }
