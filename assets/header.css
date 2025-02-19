@@ -4,7 +4,6 @@
 
 /* .logo-area {
   height: 80px;
-  border: 0;
 }
 
 .logo-area__middle--logo-image {
@@ -68,19 +67,24 @@
   padding-right: 20px;
 }
 
-.desktop-only .navigation--main {
-  border: 0;
-}
-
 .navigation__link {
   padding-top: 5px;
   padding-bottom: 5px;
 } */
 
+#main-search {
+  display: none;
+}
+
+.desktop-only .navigation--main {
+  border: 0;
+}
+
 .logo-area {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr; 
   grid-template-rows: auto;
+  border: 0;
 }
 
 .logo-area__left {
