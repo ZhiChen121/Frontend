@@ -67,12 +67,8 @@
     flex-direction: column;
   }
 
-  .image1 {
+  .image1, .image2 {
     width: 100%;
-    margin: 0;
-  }
-
-  .image2 {
-    width: 100%;
+    padding: 15px;
   }
 }
