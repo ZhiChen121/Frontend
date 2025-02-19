@@ -74,4 +74,23 @@
   .cart__count {
     visibility: hidden;
   }
+  .logo-area {
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto auto;
+  }
+
+  .logo-area__left {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .logo-area__middle {
+    grid-column: 1; 
+    grid-row: 2;
+  }
+
+  .logo-area__right {
+    grid-column: 2; 
+    grid-row: 1;
+  }
 } 
