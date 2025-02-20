@@ -27,5 +27,18 @@
 }
 
 @media (max-width: 768px) {
+
+  .article-rich-text .article-container {
+    flex-direction: column;  
+  }
+
+  .rich-text-container {
+    justify-content: flex-start;
+    padding: 20px;
+    font-size: 16px;
+  }
   
+  .rich-text-container {
+    
+  }
 }
