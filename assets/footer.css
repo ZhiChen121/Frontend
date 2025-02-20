@@ -91,3 +91,25 @@ h6#newsletter-title {
 .bottom-footer-custom-section .copy, .bottom-footer-custom-section .built-by b {
   color: #333333;
 }
+
+.footer-info-links a, .social-icons-footer span {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .section-footer-container {
+    flex-direction: column;
+  }
+
+  .footer-logo {
+    text-align: center;
+  }
+
+  .footer-info-links, .footer-contact {
+    margin-bottom: 30px;
+  }
+
+  .footer-info-links h1, .footer-contact h1 {
+    margin-bottom: 5px;
+  }
+}
