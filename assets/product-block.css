@@ -5,14 +5,9 @@
   letter-spacing: 1px;
   font-weight: 700;
   font-size: 12px;
-}
-
-@media (min-width: 768px) {
-  .product-block .image-cont .price-label--sale {
-      display: block;
-      width: 100%;
-      position: absolute;
-      bottom: 10px;
-  }
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
 }
 
