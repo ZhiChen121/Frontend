@@ -82,3 +82,28 @@
   transform: translate(-50%, -50%);
   color: white;
 }
+
+@media (max-width: 768px) {
+  .gallery-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .gallery-container-1, .gallery-container-2 {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .gallery-container-3 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .gallery-container-1 img, .gallery-container-2 img, .gallery-container-1 .gallery-text, .gallery-container-2 .gallery-text {
+    width: 100%;
+  }
+
+  .gallery-container-1 .gallery-text, .gallery-container-2 .gallery-text {
+    padding: 30px;
+  }
+}
