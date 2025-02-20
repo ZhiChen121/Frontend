@@ -99,6 +99,7 @@ h6#newsletter-title {
 @media (max-width: 768px) {
   .section-footer-container {
     flex-direction: column;
+    margin: 30px 0;
   }
 
   .footer-logo {
