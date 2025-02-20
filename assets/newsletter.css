@@ -50,3 +50,18 @@
 .signup-form__inline-container .signup-form__email {
   width: 50%;
 }
+
+@media (max-width: 768px) { 
+  .section-signup {
+    padding: 30px;
+  }
+
+  .custom-newsletter-container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .signup-form__inline-container .signup-form__email, .signup-form__inline-container .signup-form__button {
+    width: 100%;
+  }
+}
