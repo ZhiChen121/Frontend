@@ -1057,7 +1057,7 @@
           "enable_transparent": false,
           "transparent_color": "#ffffff",
           "menu_linklist": "symmetry-menu",
-          "menu_linklist_mobile": "",
+          "menu_linklist_mobile": "symmetry-menu",
           "menu_layout": "underneath",
           "nav_featured_link": "Offers",
           "enable_mobile_promo_carousel": true,
