@@ -65,7 +65,7 @@
         "title": "Featured collection",
         "collection": "automated-collection",
         "show_vendor": true,
-        "enable_carousel": false,
+        "enable_carousel": true,
         "grid": 4,
         "rows": 1,
         "use_alt_bg": true,
