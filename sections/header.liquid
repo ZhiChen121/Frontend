@@ -1,4 +1,4 @@
-{{  'header.css' | asset_url | stylesheet_tag }}
+{{ 'header.css' | asset_url | stylesheet_tag }}
 
 {%- assign mobile_expand_with_entire_link = true -%}
 
@@ -79,9 +79,9 @@
 
       <div class="logo-area__middle logo-area__middle--logo-{% if section.settings.logo != blank %}image{% else %}text{% endif %}">
         <div class="logo-area__middle__inner">
-          <!-- <button class="button notabutton mobile-nav-toggle" aria-label="{{ 'general.navigation.menu_toggle_aria_label' | t | escape }}" aria-controls="main-nav">
+          <button class="button notabutton mobile-nav-toggle" aria-label="{{ 'general.navigation.menu_toggle_aria_label' | t | escape }}" aria-controls="main-nav">
             {%- render 'svg-menu' -%}
-          </button> -->
+          </button>
           {% if section.settings.enable_search %}
             <div class="search-wrapper">
               <input class="show-search" type="search" placeholder="What are you looking for?"/>
