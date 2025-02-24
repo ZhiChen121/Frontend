@@ -104,7 +104,11 @@
     right: 0px;
   }
 
-  .mobile-nav-toggle {
+  .logo-area__left__inner {
+    justify-content: space-between
+  }
+
+  .logo-area__left__inner .mobile-nav-toggle {
     margin-left: 5px;
   }
 } 
