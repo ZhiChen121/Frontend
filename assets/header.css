@@ -111,10 +111,15 @@
   }
 
   .logo-area__left__inner {
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    gap: 50px;
   }
 
   .logo-area__left__inner .mobile-nav-toggle {
     margin-left: 5px;
+  }
+
+  .logo {
+    flex: 1;
   }
 } 
