@@ -111,7 +111,7 @@
   }
 
   .logo-area__left__inner {
-    justify-content: space-between
+    justify-content: space-evenly;
   }
 
   .logo-area__left__inner .mobile-nav-toggle {
