@@ -1,7 +1,11 @@
 {{ 'rich-text.css' | asset_url | stylesheet_tag }}
 
+{% assign rich_text_svg = "svg-return, svg-truck, svg-location-pin" | split: ", " %}
+{% assign rich_text_description = "28 Day Returns, Free Delivery On Orders Over €40, In Business Since 1977" | split: ", " %}
+
 <div class="article-rich-text">
   <div class="article-container">
+    {% comment %}
     <div class="rich-text-container">
       <span>{%- render 'svg-return' -%}</span>
       <p class="rich-text-title">28 Day Returns</p>
@@ -14,6 +18,13 @@
       <span>{%- render 'svg-location-pin' -%}</span>
       <p class="rich-text-title">In Business Since 1977</p>
     </div>
+    {% endcomment %}
+    {% for i in (1..rich_text_svg.length) %}
+      <div class="rich-text-container">
+        <span>{%- render {{ rich_text_svg[i] }} -%}</span>
+        <p class="rich-text-title">{{ rich_text_description[i] }}</p>
+      </div>
+    {% endfor %}
   </div>
 </div>
 
