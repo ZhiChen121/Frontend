@@ -1,6 +1,9 @@
 {{ 'custom-hero.css' | asset_url | stylesheet_tag }}
 
 {% assign hero_description = "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus." %}
+{% assign hero_title_1 = "fishing" %}
+{% assign hero_title_2 = "outdoors" %}
+
 
 <div id="section-id-{{ section.id }}" class="{% unless section.settings.full_width %}container{% endunless %} fully-spaced-row--medium section-id-{{ section.id }}" data-section-type="custom-liquid">
   <div class="custom-html">
@@ -9,18 +12,18 @@
         <img src="{{ 'hero-homepage-1.jpg' | asset_url }}">
         <div class="textContainer">
           <p class="sub-heading">EVERYTHING YOU NEED</p>
-          <h1>FISHING</h1>
+          <h1>{{ hero_title_1 | upcase }}</h1>
           <p>{{  hero_description }}</p>
-          <button>SHOP FISHING</button>
+          <button>SHOP {{ hero_title_1 | upcase }}</button>
         </div>
       </div>
       <div class="image2">
         <img src="{{ 'hero-homepage-2.jpg' | asset_url }}">
         <div class="textContainer">
           <p class="sub-heading">ON AN ADVENTURE</p>
-          <h1>OUTDOORS</h1>
+          <h1>{{ hero_title_2 | upcase }}</h1>
           <p>{{ hero_description }}</p>
-          <button>SHOP OUTDOORS</button>
+          <button>SHOP {{ hero_title_2 | upcase }}</button>
         </div>
       </div>
     </div>
