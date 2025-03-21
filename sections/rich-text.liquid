@@ -5,7 +5,7 @@
 
 <div class="article-rich-text">
   <div class="article-container">
-    {% for i in (0..rich_text_svg.size) %}
+    {% for i in (0..rich_text_svg.size-1) %}
       <div class="rich-text-container">
         {% include rich_text_svg[i] %}
         <p class="rich-text-title">{{ rich_text_description[i] }}</p>
