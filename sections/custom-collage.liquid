@@ -1,32 +1,35 @@
 {{ 'custom-collage.css' | asset_url | stylesheet_tag }}
 
+{% assign first_column_first_row = 'hiking' %}
+{% assign first_column_second_row = 'accessories' %}
+{% assign second_column = 'outdoor essentials' %} 
+
 <div class="gallery-container">
   <div class="gallery-container-1">
     <img src="{{ 'collection-homepage.jpg' | asset_url }}" />
     <div class="gallery-text">
-      <h1>HIKING ESSENTIALS</h1>
+      <h1>{{ first_column_first_row | upcase }} ESSENTIALS</h1>
       <p>Nullan quis risus eget urna mollis ornare vel eu leo.</p>
-      <button>SHOP HIKING</button>
+      <button>SHOP {{ first_column_first_row | upcase }}</button>
     </div>
   </div>
   <div class="gallery-container-2">
     <img src="{{ 'collection-homepage-2.jpg' | asset_url }}" />
     <div class="gallery-text">
-      <h1>ACCESSORIES</h1>
+      <h1>{{ first_column_second_row | upcase }}</h1>
       <p>Curabitur blandit tempus porttitor. Maecenas faucibus mollis.</p>
-      <button>SHOP ACCESSORIES</button>
+      <button>SHOP {{ first_column_first_row }}</button>
     </div>
   </div>
   <div class="gallery-container-3">
     <div>
       <img src="{{ 'collection-homepage-3.jpg' | asset_url }}" />
       <div class="gallery-text">
-        <h1>OUTDOOR ESSENTIALS</h1>
+        <h1>{{ second_column }}</h1>
         <p>Curabitur blandit tempus porttitor. Maecenas faucibus mollis.</p>
-        <button>SHOP OUTDOOR ESSENTIALS</button>
+        <button>SHOP {{ second_column }}</button>
       </div>
     </div>
-
   </div>
 </div>
 
