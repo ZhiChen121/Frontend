@@ -25,9 +25,9 @@
     <div>
       <img src="{{ 'collection-homepage-3.jpg' | asset_url }}" />
       <div class="gallery-text">
-        <h1>{{ second_column }}</h1>
+        <h1>{{ second_column | upcase }}</h1>
         <p>Curabitur blandit tempus porttitor. Maecenas faucibus mollis.</p>
-        <button>SHOP {{ second_column }}</button>
+        <button>SHOP {{ second_column | upcase }}</button>
       </div>
     </div>
   </div>
