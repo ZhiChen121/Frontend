@@ -1,0 +1,7 @@
+{{ 'custom-collage-gallery-text.css' | asset_url | stylesheet_tag }}
+
+<div class="gallery-text">
+  <h1>{{ title | upcase }}</h1>
+  <p>{{ description }}</p>
+  <button>SHOP {{ title | upcase }}</button>
+</div>
