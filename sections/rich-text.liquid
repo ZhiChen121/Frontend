@@ -7,7 +7,7 @@
   <div class="article-container">
     {% for i in (0..rich_text_svg.size) %}
       <div class="rich-text-container">
-        {% include rich_text_svg[i] %}
+         <img src="{{ 'rich-text/' | append: rich_text_svg[i] | append: '.svg' | asset_url }}" alt="{{ rich_text_description[i] }}">
         <p class="rich-text-title">{{ rich_text_description[i] }}</p>
       </div>
     {% endfor %}
