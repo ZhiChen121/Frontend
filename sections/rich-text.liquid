@@ -5,21 +5,7 @@
 
 <div class="article-rich-text">
   <div class="article-container">
-    {% comment %}
-    <div class="rich-text-container">
-      <span>{%- render 'svg-return' -%}</span>
-      <p class="rich-text-title">28 Day Returns</p>
-    </div>
-    <div class="rich-text-container">
-      <span>{%- render 'svg-truck' -%}</span>
-      <p class="rich-text-title">Free Delivery On Orders Over €40 </p>
-    </div>
-    <div class="rich-text-container">
-      <span>{%- render 'svg-location-pin' -%}</span>
-      <p class="rich-text-title">In Business Since 1977</p>
-    </div>
-    {% endcomment %}
-    {% for i in (1..rich_text_svg.length) %}
+    {% for i in (1..rich_text_svg.size) %}
       <div class="rich-text-container">
         <span>{%- render {{ rich_text_svg[i] }} -%}</span>
         <p class="rich-text-title">{{ rich_text_description[i] }}</p>
