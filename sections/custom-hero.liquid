@@ -1,29 +1,24 @@
 {{ 'custom-hero.css' | asset_url | stylesheet_tag }}
 
-{% assign hero_description = "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus." %}
-{% assign hero_title_1 = "fishing" %}
-{% assign hero_title_2 = "outdoors" %}
-
-
 <div id="section-id-{{ section.id }}" class="{% unless section.settings.full_width %}container{% endunless %} fully-spaced-row--medium section-id-{{ section.id }}" data-section-type="custom-liquid">
   <div class="custom-html">
     <div class="image-container">
       <div class="image1">
-        <img src="{{ 'hero-homepage-1.jpg' | asset_url }}">
+        <img src="{{ section.settings.hero_image_1 | asset_url }}">
         <div class="textContainer">
-          <p class="sub-heading">EVERYTHING YOU NEED</p>
-          <h1>{{ hero_title_1 | upcase }}</h1>
-          <p>{{  hero_description }}</p>
-          <button>SHOP {{ hero_title_1 | upcase }}</button>
+          <p class="sub-heading">{{ section.settings.hero_subheading_1 }}</p>
+          <h1>{{ section.settings.hero_title_1 | upcase }}</h1>
+          <p>{{  section.settings.hero_description }}</p>
+          <button>SHOP {{ section.settings.hero_button_text_1 | upcase }}</button>
         </div>
       </div>
       <div class="image2">
-        <img src="{{ 'hero-homepage-2.jpg' | asset_url }}">
+        <img src="{{ section.settings.hero_image_1 | asset_url }}">
         <div class="textContainer">
-          <p class="sub-heading">ON AN ADVENTURE</p>
-          <h1>{{ hero_title_2 | upcase }}</h1>
-          <p>{{ hero_description }}</p>
-          <button>SHOP {{ hero_title_2 | upcase }}</button>
+          <p class="sub-heading">{{ section.settings.hero_subheading_2 }}</p>
+          <h1>{{ section.settings.hero_title_2 | upcase }}</h1>
+          <p>{{ section.settings.hero_description }}</p>
+          <button>SHOP {{ section.settings.hero_button_text_2 | upcase }}</button>
         </div>
       </div>
     </div>
@@ -42,9 +37,56 @@
         "default": true
       },
       {
-        "type": "liquid",
-        "id": "code",
-        "label": "Custom Liquid"
+        "type": "text",
+        "id": "hero_title_1",
+        "label": "Hero Title 1",
+        "default": "Explore the Outdoors"
+      },
+      {
+        "type": "text",
+        "id": "hero_subheading_1",
+        "label": "Hero Subheading 1",
+        "default": "EVERYTHING YOU NEED"
+      },
+      {
+        "type": "textarea",
+        "id": "hero_description",
+        "label": "Hero Description",
+        "default": "Discover our wide selection of products to help you enjoy your outdoor adventures."
+      },
+      {
+        "type": "text",
+        "id": "hero_button_text_1",
+        "label": "Hero Button Text 1",
+        "default": "SHOP EVERYTHING"
+      },
+      {
+        "type": "image_picker",
+        "id": "hero_image_1",
+        "label": "Hero Image 1"
+      },
+      {
+        "type": "text",
+        "id": "hero_title_2",
+        "label": "Hero Title 2",
+        "default": "Gear Up for Adventure"
+      },
+      {
+        "type": "text",
+        "id": "hero_subheading_2",
+        "label": "Hero Subheading 2",
+        "default": "ON AN ADVENTURE"
+      },
+      {
+        "type": "text",
+        "id": "hero_button_text_2",
+        "label": "Hero Button Text 2",
+        "default": "SHOP ADVENTURE"
+      },
+      {
+        "type": "image_picker",
+        "id": "hero_image_2",
+        "label": "Hero Image 2"
       }
     ],
     "presets": [
