@@ -8,23 +8,29 @@
            <img src="{{ 'logo.png' | asset_url }}" width="200px" height="50px"/>
          </div>
          <div class="footer-info-links">
-           <h1>Info</h1>
-           <a>Search</a>
-           <a>Click and Collect</a>
-           <a>Returns</a>
-           <a>Delivery</a>
-           <a>Opening Hours</a>
-           <a>Privacy</a>
-           <a>Terms of Service</a>
-           <a>FAQs</a>
+          <h1>Info</h1>
+          {% if settings.footer_links %}
+            {% for link in settings.footer_links %}
+              <a href="{{ link.url }}">{{ link.title }}</a>
+            {% endfor %}
+          {% else %}
+            <a href="#">Search</a>
+            <a href="#">Click and Collect</a>
+            <a href="#">Returns</a>
+            <a href="#">Delivery</a>
+            <a href="#">Opening Hours</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">FAQs</a>
+          {% endif %}
          </div>
          <div class="footer-contact">
            <h1>Contact</h1>
            <div>
-             <p>Tel <span>012 3456789</span><br/>Email <span>hello@domain.com</span></p>
+             <p>Tel <span>{{ section.settings.telephone_contact }}</span><br/>Email <span>{{ section.settings.email_contact }}</span></p>
            </div>
            <div class="address">
-             <p>Lorem Ipsum Outdoor Unit 1, Lipsum, City, Co County</p>
+             <p>{{ section.settings.address }}</p>
            </div>
            <div>
              <p>Follow Us</p>
@@ -117,8 +123,27 @@
     "settings": [
       {
         "type": "link_list",
-        "id": "lower_menu",
-        "label": "Lower footer menu"
+        "id": "footer_links",
+        "label": "Manage Footer Links",
+        "info": "Add links to your footer section",
+      },
+      {
+        "type": "text",
+        "id": "telephone_contact",
+        "label": "Edit telephone contact",
+        "default": "012 345678"
+      },
+      {
+        "type": "text",
+        "id": "email_contact",
+        "label": "Edit email contact",
+        "default": "hello@domain.com"
+      },
+      {
+        "type": "textarea",
+        "id": "address",
+        "label": "Edit address",
+        "default": "Lorem Ipsum Outdoor Unit 1, Lipsum, City, Co County"
       },
       {
         "type": "header",
