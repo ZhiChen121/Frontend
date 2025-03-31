@@ -87,12 +87,15 @@
       "type": "custom-multi-column",
       "settings": {}
     },
-    "rich_text_dqRyPw": {
+    "rich_text_FUH7MF": {
       "type": "rich-text",
       "settings": {
         "rich_title_1": "28 Day Returns",
+        "rich_text_image_1": "shopify://shop_images/svgviewer-output_1.svg",
         "rich_title_2": "Free Delivery On Orders Over €40",
-        "rich_title_3": "In Business Since 1977"
+        "rich_text_image_2": "shopify://shop_images/svgviewer-output_2.svg",
+        "rich_title_3": "In Business Since 1977",
+        "rich_text_image_3": "shopify://shop_images/svgviewer-output.svg"
       }
     }
   },
@@ -103,6 +106,6 @@
     "featured_collection_PQ4L8P",
     "newsletter_NLtFAi",
     "custom_multi_column_BjpKTw",
-    "rich_text_dqRyPw"
+    "rich_text_FUH7MF"
   ]
 }
