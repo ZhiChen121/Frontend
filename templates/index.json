@@ -15,50 +15,26 @@
         "full_width": true,
         "hero_title_1": "Fishing",
         "hero_subheading_1": "EVERYTHING YOU NEED",
+        "hero_description_1": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
         "hero_button_text_1": "SHOP EVERYTHING",
         "hero_image_1": "shopify://shop_images/hero-homepage-1.jpg",
         "hero_title_2": "Outdoors",
         "hero_subheading_2": "ON AN ADVENTURE",
         "hero_button_text_2": "SHOP ADVENTURE",
+        "hero_description_2": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
         "hero_image_2": "shopify://shop_images/hero-homepage-2.jpg"
       }
     },
     "1635927863703110df": {
       "type": "rich-text",
-      "blocks": {
-        "1635927863703110df-2": {
-          "type": "text",
-          "settings": {
-            "text": "<p>28 Day Returns</p>",
-            "enlarge_text": false
-          }
-        },
-        "text_jmwpHe": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Free Delivery on Orders Over €40</p>",
-            "enlarge_text": false
-          }
-        },
-        "text_zJhUmj": {
-          "type": "text",
-          "settings": {
-            "text": "<p>In Business Since 1977</p>",
-            "enlarge_text": false
-          }
-        }
-      },
-      "block_order": [
-        "1635927863703110df-2",
-        "text_jmwpHe",
-        "text_zJhUmj"
-      ],
       "custom_css": [],
       "settings": {
-        "height": "small",
-        "text_alignment": "center",
-        "full_width": false,
-        "use_alt_bg": false
+        "rich_title_1": "28 Day Returns",
+        "rich_text_image_1": "shopify://shop_images/svgviewer-output.svg",
+        "rich_title_2": "Free Delivery On Orders Over €40",
+        "rich_text_image_2": "shopify://shop_images/svgviewer-output_1.svg",
+        "rich_title_3": "In Business Since 1977",
+        "rich_text_image_3": "shopify://shop_images/svgviewer-output_2.svg"
       }
     },
     "custom_collage_GBUPzb": {
@@ -100,23 +76,10 @@
     },
     "rich_text_dqRyPw": {
       "type": "rich-text",
-      "blocks": {
-        "heading_UFG7c6": {
-          "type": "heading",
-          "settings": {
-            "title": "Rich text",
-            "use_h1": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_UFG7c6"
-      ],
       "settings": {
-        "height": "medium",
-        "text_alignment": "center",
-        "full_width": false,
-        "use_alt_bg": false
+        "rich_title_1": "28 Day Returns",
+        "rich_title_2": "Free Delivery On Orders Over €40",
+        "rich_title_3": "In Business Since 1977"
       }
     }
   },
