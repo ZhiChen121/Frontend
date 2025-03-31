@@ -1114,7 +1114,10 @@
           "1601372771635"
         ],
         "settings": {
-          "lower_menu": "footer",
+          "footer_links": "footer",
+          "telephone_contact": "012 3456789",
+          "email_contact": "hello@domain.com",
+          "address": "Lorem Ipsum Outdoor Unit 1, Lipsum, City, Co County",
           "show_payment_icons": false,
           "show_country_selector": false,
           "show_language_selector": false
