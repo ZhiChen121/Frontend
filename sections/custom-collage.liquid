@@ -1,33 +1,29 @@
 {{ 'custom-collage.css' | asset_url | stylesheet_tag }}
 
-{% assign first_column_first_row = 'hiking' %}
-{% assign first_column_second_row = 'accessories' %}
-{% assign second_column = 'outdoor essentials' %} 
-
 <div class="gallery-container">
   <div class="gallery-container-1">
-    <img src="{{ 'collection-homepage.jpg' | asset_url }}" />
+    <img src="{{ section.settings.collage_image_1 | image_url }}" />
     <div class="gallery-text">
-      <h1>{{ first_column_first_row | upcase }} ESSENTIALS</h1>
-      <p>Nullan quis risus eget urna mollis ornare vel eu leo.</p>
-      <button>SHOP {{ first_column_first_row | upcase }}</button>
+      <h1>{{ section.settings.collage_title_1 | upcase }}</h1>
+      <p>{{ section.settings.collage_text_1 }}</p>
+      <button>{{ section.settings.collage_button_1 }}</button>
     </div>
   </div>
   <div class="gallery-container-2">
-    <img src="{{ 'collection-homepage-2.jpg' | asset_url }}" />
-    <div class="gallery-text">
-      <h1>{{ first_column_second_row | upcase }}</h1>
-      <p>Curabitur blandit tempus porttitor. Maecenas faucibus mollis.</p>
-      <button>SHOP {{ first_column_first_row }}</button>
+    <img src="{{ section.settings.collage_image_2 | image_url }}" />
+   <div class="gallery-text">
+      <h1>{{ section.settings.collage_title_2 | upcase }}</h1>
+      <p>{{ section.settings.collage_text_2 }}</p>
+      <button>{{ section.settings.collage_button_2 }}</button>
     </div>
   </div>
   <div class="gallery-container-3">
     <div>
-      <img src="{{ 'collection-homepage-3.jpg' | asset_url }}" />
+      <img src="{{ section.settings.collage_image_3 | image_url }}" />
       <div class="gallery-text">
-        <h1>{{ second_column | upcase }}</h1>
-        <p>Curabitur blandit tempus porttitor. Maecenas faucibus mollis.</p>
-        <button>SHOP {{ second_column | upcase }}</button>
+        <h1>{{ section.settings.collage_title_3 | upcase }}</h1>
+        <p>{{ section.settings.collage_text_3 }}</p>
+        <button>{{ section.settings.collage_button_3 }}</button>
       </div>
     </div>
   </div>
