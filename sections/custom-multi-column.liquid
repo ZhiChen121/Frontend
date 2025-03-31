@@ -37,7 +37,17 @@
 {% schema %}
   {
     "name": "Custom Multi-column",
-    "settings": [],
+    "settings": [
+       {
+        "type": "range",
+        "id": "grid",
+        "label": "Labels per row",
+        "min": 2,
+        "max": 5,
+        "step": 1,
+        "default": 4
+      },
+    ],
      "presets": [
       {
         "name": "Custom Multi-Column",
