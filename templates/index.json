@@ -13,7 +13,15 @@
       "type": "custom-hero",
       "settings": {
         "full_width": true,
-        "code": ""
+        "hero_title_1": "Explore the Outdoors",
+        "hero_subheading_1": "EVERYTHING YOU NEED",
+        "hero_description": "Discover our wide selection of products to help you enjoy your outdoor adventures.",
+        "hero_button_text_1": "SHOP EVERYTHING",
+        "hero_image_1": "shopify://shop_images/c06d3ee39b284276f0410b89f037adfc.jpg",
+        "hero_title_2": "Gear Up for Adventure",
+        "hero_subheading_2": "ON AN ADVENTURE",
+        "hero_button_text_2": "SHOP ADVENTURE",
+        "hero_image_2": "shopify://shop_images/81656cbd635b00a63bac236d8b979a2a.jpg"
       }
     },
     "1635927863703110df": {
