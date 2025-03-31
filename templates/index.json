@@ -39,7 +39,20 @@
     },
     "custom_collage_GBUPzb": {
       "type": "custom-collage",
-      "settings": {}
+      "settings": {
+        "collage_title_1": "Hiking Essentials",
+        "collage_text_1": "Nullan quis risus eget urna mollis ornare vel eu leo.",
+        "collage_button_1": "Shop Hiking",
+        "collage_image_1": "shopify://shop_images/collection-homepage.jpg",
+        "collage_title_2": "Accessories",
+        "collage_text_2": "Curabitur blandit tempus porttitor. Maecenas faucibus mollis.",
+        "collage_button_2": "Shop accessories",
+        "collage_image_2": "shopify://shop_images/collection-homepage-2.jpg",
+        "collage_title_3": "Outdoor Essentials",
+        "collage_text_3": "Curabitur blandit tempus porttitor. Maecenas faucibus mollis.",
+        "collage_button_3": "Shop Outdoor Essentials",
+        "collage_image_3": "shopify://shop_images/collection-homepage-3.jpg"
+      }
     },
     "featured_collection_PQ4L8P": {
       "type": "featured-collection",
