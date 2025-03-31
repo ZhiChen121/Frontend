@@ -58,7 +58,7 @@
       "type": "featured-collection",
       "custom_css": [],
       "settings": {
-        "title": "Featured collection",
+        "title": "Our Favourites",
         "collection": "automated-collection",
         "show_vendor": true,
         "enable_carousel": true,
