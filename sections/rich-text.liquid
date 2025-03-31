@@ -5,12 +5,18 @@
 
 <div class="article-rich-text">
   <div class="article-container">
-    {% for i in (0..rich_text_svg.size) %}
-      <div class="rich-text-container">
-        <span>{% render rich_text_svg[i] %}</span>
-        <p class="rich-text-title">{{ rich_text_description[i] }}</p>
-      </div>
-    {% endfor %}
+    <div class="rich-text-container">
+      <img src="{{ section.settings.rich_text_image_1 | asset_url }}" alt="Returns icon"/>
+      <p class="rich-text-title">{{ section.settings.rich_title_1 }}</p>
+    </div>
+    <div class="rich-text-container">
+      <img src="{{ section.settings.rich_text_image_1 | asset_url }}" alt="Free delivery icon"/>
+      <p class="rich-text-title">{{ section.settings.rich_title_2 }}}</p>
+    </div>
+    <div class="rich-text-container">
+      <img src="{{ section.settings.rich_text_image_1 | asset_url }}" alt="Business icon"/>
+      <p class="rich-text-title">{{ section.settings.rich_title_3 }}</p>
+    </div>
   </div>
 </div>
 
@@ -21,338 +27,45 @@
     "class": "section-rich-text",
     "settings": [
       {
-        "type": "select",
-        "id": "height",
-        "label": "Section height",
-        "default": "medium",
-        "options": [
-          {
-            "value": "small",
-            "label": "Small"
-          },
-          {
-            "value": "medium",
-            "label": "Medium"
-          },
-          {
-            "value": "large",
-            "label": "Large"
-          }
-        ]
+        "type": "text",
+        "id": "rich_title_1",
+        "label": "Rich Title 1",
+        "default": "28 Day Returns"
       },
       {
-        "type": "select",
-        "id": "text_alignment",
-        "label": "Text alignment",
-        "default": "center",
-        "options": [
-          {
-            "value": "left",
-            "label": "Left"
-          },
-          {
-            "value": "center",
-            "label": "Center"
-          },
-          {
-            "value": "right",
-            "label": "Right"
-          }
-        ]
-      },
-      {
-        "type": "checkbox",
-        "id": "full_width",
-        "label": "Wide display",
-        "default": false
-      },
-      {
-        "type": "checkbox",
-        "id": "use_alt_bg",
-        "label": "Use alternate section color",
-        "default": false
-      }
-    ],
-    "blocks": [
-      {
-        "type": "heading",
-        "name": "Heading",
-        "settings": [
-          {
-            "type": "text",
-            "id": "title",
-            "label": "Heading",
-            "default": "Rich text"
-          },
-          {
-            "type": "checkbox",
-            "id": "use_h1",
-            "label": "Set as primary page heading",
-            "info": "Use <h1> tag. One per page recommended. [Read more](https://cleancanvas.co.uk/support/symmetry/section-h1-setting)",
-            "default": false
-          }
-        ]
-      },
-      {
-        "type": "subheading",
-        "name": "Subheading",
-        "settings": [
-          {
-            "type": "text",
-            "id": "subheading",
-            "label": "Subheading",
-            "default": "Subheading"
-          }
-        ]
+        "type": "image_picker",
+        "id": "rich_text_image_1",
+        "label": "Icon 1"
       },
       {
         "type": "text",
-        "name": "Text",
-        "settings": [
-          {
-            "type": "richtext",
-            "id": "text",
-            "label": "Text",
-            "default": "<p>Use this text to share information about your store with your customers. Describe products, share announcements, or welcome customers to your store.</p>"
-          },
-          {
-            "type": "checkbox",
-            "id": "enlarge_text",
-            "label": "Enlarge text",
-            "default": true
-          }
-        ]
+        "id": "rich_title_2",
+        "label": "Rich Title 2",
+        "default": "Free Delivery On Orders Over €40"
       },
       {
-        "type": "button",
-        "name": "Button",
-        "settings": [
-          {
-            "type": "paragraph",
-            "content": "Consecutive buttons will show on the same row"
-          },
-          {
-            "type": "text",
-            "id": "button_label",
-            "label": "Button",
-            "default": "Button text"
-          },
-          {
-            "type": "url",
-            "id": "button_link",
-            "label": "Button link"
-          },
-          {
-            "type": "select",
-            "id": "button_style",
-            "label": "Button style",
-            "default": "primary",
-            "options": [
-              {
-                "label": "Button - primary",
-                "value": "primary"
-              },
-              {
-                "label": "Button - secondary",
-                "value": "secondary"
-              },
-              {
-                "label": "Link",
-                "value": "link"
-              }
-            ]
-          }
-        ]
+        "type": "image_picker",
+        "id": "rich_text_image_2",
+        "label": "Icon 2"
       },
       {
-        "type": "icon",
-        "name": "Icon",
-        "settings": [
-          {
-            "type": "select",
-            "id": "icon",
-            "label": "Icon",
-            "default": "star",
-            "options": [
-              {
-                "value": "award",
-                "label": "Award"
-              },
-              {
-                "value": "box",
-                "label": "Box"
-              },
-              {
-                "value": "briefcase",
-                "label": "Briefcase"
-              },
-              {
-                "value": "calendar",
-                "label": "Calendar"
-              },
-              {
-                "value": "chat_bubble",
-                "label": "Chat bubble"
-              },
-              {
-                "value": "check_mark",
-                "label": "Check mark"
-              },
-              {
-                "value": "check_mark_in_circle",
-                "label": "Check mark in circle"
-              },
-              {
-                "value": "clock",
-                "label": "Clock"
-              },
-              {
-                "value": "credit_card",
-                "label": "Credit card"
-              },
-              {
-                "value": "dollar_sign",
-                "label": "Dollar sign"
-              },
-              {
-                "value": "dryer",
-                "label": "Dryer"
-              },
-              {
-                "value": "eye",
-                "label": "Eye"
-              },
-              {
-                "value": "feather",
-                "label": "Feather"
-              },
-              {
-                "value": "gift",
-                "label": "Gift"
-              },
-              {
-                "value": "heart",
-                "label": "Heart"
-              },
-              {
-                "value": "iron",
-                "label": "Iron"
-              },
-              {
-                "value": "leaf",
-                "label": "Leaf"
-              },
-              {
-                "value": "leather",
-                "label": "Leather"
-              },
-              {
-                "value": "lock",
-                "label": "Lock"
-              },
-              {
-                "value": "map_pin",
-                "label": "Map pin"
-              },
-              {
-                "value": "pants",
-                "label": "Pants"
-              },
-              {
-                "value": "percent",
-                "label": "Percent"
-              },
-              {
-                "value": "plane",
-                "label": "Plane"
-              },
-              {
-                "value": "price_tag",
-                "label": "Price tag"
-              },
-              {
-                "value": "question_mark",
-                "label": "Question mark"
-              },
-              {
-                "value": "return",
-                "label": "Return"
-              },
-              {
-                "value": "ruler",
-                "label": "Ruler"
-              },
-              {
-                "value": "scissors",
-                "label": "Scissors"
-              },
-              {
-                "value": "shirt",
-                "label": "Shirt"
-              },
-              {
-                "value": "shoe",
-                "label": "Shoe"
-              },
-              {
-                "value": "silhouette",
-                "label": "Silhouette"
-              },
-              {
-                "value": "star",
-                "label": "Star"
-              },
-              {
-                "value": "truck",
-                "label": "Truck"
-              },
-              {
-                "value": "washing",
-                "label": "Washing"
-              }
-            ]
-          }
-        ]
+        "type": "text",
+        "id": "rich_title_3",
+        "label": "Rich Title 3",
+        "default": "In Business Since 1977"
       },
       {
-        "type": "image",
-        "name": "Image",
-        "settings": [
-          {
-            "type": "image_picker",
-            "id": "image",
-            "label": "Image"
-          },
-          {
-            "type": "range",
-            "id": "image_width",
-            "min": 60,
-            "max": 700,
-            "step": 10,
-            "unit": "px",
-            "label": "Image width",
-            "default": 260
-          },
-          {
-            "type": "url",
-            "id": "url",
-            "label": "Link"
-          }
-        ]
-      }
+        "type": "image_picker",
+        "id": "rich_text_image_3",
+        "label": "Icon 3"
+      },
     ],
     "presets": [
       {
         "name": "Rich text",
-        "settings": {},
-        "blocks": [
-          {
-            "type": "heading"
-          },
-          {
-            "type": "text"
-          }
-        ]
+        "settings": {
+          
+        }
       }
     ]
   }
