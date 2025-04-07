@@ -1,6 +1,14 @@
 {{ 'custom-multi-column.css' | asset_url | stylesheet_tag }}
 
-<div class="multi-column-section">
+{% style %}
+  .multi-columns {
+    display: grid;
+    grid-template-columns: repeat(var(--grid-columns), 1fr);
+    gap: 2rem;
+  }
+{% endstyle %}
+
+<!-- <div class="multi-column-section">
   <div class="multi-column-title">
     <h2>Quisque velit nisi-</h2>
     <h1>"Pellentesque in ipsum id orci porta dapibus."</h1>
@@ -32,28 +40,126 @@
       LEARN MORE
     </button>
   </div>
+</div> -->
+
+<div class="multi-column-section">
+  <div class="multi-column-title">
+    <h2>{{ section.settings.heading }}</h2>
+    <h1>{{ section.settings.subheading }}</h1>
+  </div>
+  <div class="multi-columns" style="--grid-columns: {{ section.settings.grid }};">
+    {% for block in section.blocks %}
+      <div class="column">
+        <span>{% render block.settings.icon %}</span>
+        <h2>{{ block.settings.title }}</h2>
+        <p>{{ block.settings.text }}</p>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="multi-column-button">
+    <button>{{ section.settings.button_text }}</button>
+  </div>
 </div>
 
+
+
 {% schema %}
-  {
-    "name": "Custom Multi-column",
-    "settings": [
-       {
-        "type": "range",
-        "id": "grid",
-        "label": "Labels per row",
-        "min": 2,
-        "max": 5,
-        "step": 1,
-        "default": 4
-      },
-    ],
-     "presets": [
-      {
-        "name": "Custom Multi-Column",
-        "settings": {
+{
+  "name": "Custom Multi-column",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section Heading",
+      "default": "Quisque velit nisi-"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Section Subheading",
+      "default": "\"Pellentesque in ipsum id orci porta dapibus.\""
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "LEARN MORE"
+    },
+    {
+      "type": "range",
+      "id": "grid",
+      "label": "Items per row",
+      "min": 2,
+      "max": 5,
+      "step": 1,
+      "default": 4
+    }
+  ],
+  "blocks": [
+    {
+      "type": "column",
+      "name": "Column",
+      "settings": [
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Icon snippet name",
+          "default": "house-location"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "We Love Outdoors"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Description",
+          "default": "Cum sociis natoque penatibus..."
         }
-      }
-    ]
-  }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Multi-Column",
+      "settings": {},
+      "blocks": [
+        {
+          "type": "column",
+          "settings": {
+            "icon": "house-location",
+            "title": "We Love Outdoors",
+            "text": "Cum sociis natoque penatibus..."
+          }
+        },
+        {
+          "type": "column",
+          "settings": {
+            "icon": "eco-earth",
+            "title": "Sustainable",
+            "text": "Curabitur blandit tempus porttitor..."
+          }
+        },
+        {
+          "type": "column",
+          "settings": {
+            "icon": "saint-patrick-pin",
+            "title": "Based in Ireland",
+            "text": "Sed posuere consectetur est..."
+          }
+        },
+        {
+          "type": "column",
+          "settings": {
+            "icon": "knitting-ball",
+            "title": "Something",
+            "text": "Lorem ipsum dolor sit amet..."
+          }
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
