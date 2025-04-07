@@ -106,6 +106,7 @@
         "column_epG6Ea": {
           "type": "column",
           "settings": {
+            "icon_image": "shopify://shop_images/image_1.svg",
             "fallback_icon": "house-location",
             "title": "Based in IRELAND",
             "text": "Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur."
@@ -114,6 +115,7 @@
         "column_Rwit6m": {
           "type": "column",
           "settings": {
+            "icon_image": "shopify://shop_images/image_2.svg",
             "fallback_icon": "house-location",
             "title": "Something",
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
