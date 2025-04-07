@@ -85,7 +85,52 @@
     },
     "custom_multi_column_BjpKTw": {
       "type": "custom-multi-column",
-      "settings": {}
+      "blocks": {
+        "column_CtiW4H": {
+          "type": "column",
+          "settings": {
+            "icon": "house-location",
+            "title": "We Love Outdoors",
+            "text": "Cum sociis natoque penatibus..."
+          }
+        },
+        "column_xhqVwa": {
+          "type": "column",
+          "settings": {
+            "icon": "house-location",
+            "title": "We Love Outdoors",
+            "text": "Cum sociis natoque penatibus..."
+          }
+        },
+        "column_epG6Ea": {
+          "type": "column",
+          "settings": {
+            "icon": "house-location",
+            "title": "We Love Outdoors",
+            "text": "Cum sociis natoque penatibus..."
+          }
+        },
+        "column_i4aJKz": {
+          "type": "column",
+          "settings": {
+            "icon": "house-location",
+            "title": "We Love Outdoors",
+            "text": "Cum sociis natoque penatibus..."
+          }
+        }
+      },
+      "block_order": [
+        "column_CtiW4H",
+        "column_xhqVwa",
+        "column_epG6Ea",
+        "column_i4aJKz"
+      ],
+      "settings": {
+        "heading": "Quisque velit nisi-",
+        "subheading": "\"Pellentesque in ipsum id orci porta dapibus.\"",
+        "button_text": "LEARN MORE",
+        "grid": 4
+      }
     },
     "rich_text_FUH7MF": {
       "type": "rich-text",
