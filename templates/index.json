@@ -91,31 +91,31 @@
           "settings": {
             "icon": "house-location",
             "title": "We Love Outdoors",
-            "text": "Cum sociis natoque penatibus..."
+            "text": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
           }
         },
         "column_xhqVwa": {
           "type": "column",
           "settings": {
             "icon": "house-location",
-            "title": "We Love Outdoors",
-            "text": "Cum sociis natoque penatibus..."
+            "title": "Sustainable",
+            "text": "Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum."
           }
         },
         "column_epG6Ea": {
           "type": "column",
           "settings": {
             "icon": "house-location",
-            "title": "We Love Outdoors",
-            "text": "Cum sociis natoque penatibus..."
+            "title": "Based in IRELAND",
+            "text": "Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur."
           }
         },
-        "column_i4aJKz": {
+        "column_Rwit6m": {
           "type": "column",
           "settings": {
             "icon": "house-location",
-            "title": "We Love Outdoors",
-            "text": "Cum sociis natoque penatibus..."
+            "title": "Something",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
           }
         }
       },
@@ -123,7 +123,7 @@
         "column_CtiW4H",
         "column_xhqVwa",
         "column_epG6Ea",
-        "column_i4aJKz"
+        "column_Rwit6m"
       ],
       "settings": {
         "heading": "Quisque velit nisi-",
