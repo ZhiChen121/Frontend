@@ -50,7 +50,7 @@
   <div class="multi-columns" style="--grid-columns: {{ section.settings.grid }};">
     {% for block in section.blocks %}
       <div class="column">
-        <span>{% render block.settings.icon %}</span>
+        <span>{% render "house-location" %}</span>
         <h2>{{ block.settings.title }}</h2>
         <p>{{ block.settings.text }}</p>
       </div>
