@@ -92,7 +92,7 @@
     margin-top: 40px;
   }
 
-  /* .multi-columns {
+  .multi-columns {
     grid-template-columns: repeat(1, 1fr);
-  } */
+  }
 }
