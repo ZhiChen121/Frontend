@@ -50,10 +50,13 @@
   <div class="multi-columns" style="--grid-columns: {{ section.settings.grid }};">
     {% for block in section.blocks %}
       <div class="column">
-        {% capture snippet_name %}{{ block.settings.icon }}{% endcapture %}
-        <span>
-          {% include snippet_name %}
-        </span>
+         <span class="column-icon">
+            {% if block.settings.icon_image != blank %}
+              <img src="{{ block.settings.icon_image }}" alt="{{ block.settings.title | escape }}">
+            {% else %}
+              {% include block.settings.fallback_icon %}
+            {% endif %}
+         </span>
         <h2>{{ block.settings.title }}</h2>
         <p>{{ block.settings.text }}</p>
       </div>
@@ -103,10 +106,16 @@
       "type": "column",
       "name": "Column",
       "settings": [
+         {
+          "type": "image_picker",
+          "id": "icon_image",
+          "label": "Upload Icon",
+          "info": "Upload an svg icon. If no icon is uploaded, there is a default icon."
+        },
         {
           "type": "text",
-          "id": "icon",
-          "label": "Icon snippet name",
+          "id": "fallback_icon",
+          "label": "Fallback snippet name",
           "default": "house-location"
         },
         {
@@ -132,7 +141,8 @@
         {
           "type": "column",
           "settings": {
-            "icon": "house-location",
+            "icon_image": "",
+            "fallback_icon": "house-location",
             "title": "We Love Outdoors",
             "text": "Cum sociis natoque penatibus..."
           }
@@ -140,7 +150,8 @@
         {
           "type": "column",
           "settings": {
-            "icon": "eco-earth",
+            "icon_image": "",
+            "fallback_icon": "eco-earth",
             "title": "Sustainable",
             "text": "Curabitur blandit tempus porttitor..."
           }
@@ -148,7 +159,8 @@
         {
           "type": "column",
           "settings": {
-            "icon": "saint-patrick-pin",
+            "icon_image": "",
+            "fallback_icon": "saint-patrick-pin",
             "title": "Based in Ireland",
             "text": "Sed posuere consectetur est..."
           }
@@ -156,7 +168,8 @@
         {
           "type": "column",
           "settings": {
-            "icon": "knitting-ball",
+            "icon_image": "",
+            "fallback_icon": "knitting-ball",
             "title": "Something",
             "text": "Lorem ipsum dolor sit amet..."
           }
