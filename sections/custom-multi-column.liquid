@@ -52,7 +52,7 @@
       <div class="column">
          <span class="column-icon">
             {% if block.settings.icon_image != blank %}
-              <img src="{{ block.settings.icon_image }}" alt="{{ block.settings.title | escape }}">
+              <img src="{{ block.settings.icon_image | image_url }}" alt="{{ block.settings.title | escape }}">
             {% else %}
               {% include block.settings.fallback_icon %}
             {% endif %}
@@ -115,7 +115,8 @@
         {
           "type": "text",
           "id": "fallback_icon",
-          "label": "Fallback snippet name",
+          "label": "Default snippet",
+          "info": "Update to change the default icon",
           "default": "house-location"
         },
         {

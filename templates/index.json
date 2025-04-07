@@ -86,18 +86,19 @@
     "custom_multi_column_BjpKTw": {
       "type": "custom-multi-column",
       "blocks": {
-        "column_CtiW4H": {
+        "column_fKXWJG": {
           "type": "column",
           "settings": {
-            "icon": "house-location",
+            "fallback_icon": "house-location",
             "title": "We Love Outdoors",
-            "text": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+            "text": "Cum sociis natoque penatibus..."
           }
         },
         "column_xhqVwa": {
           "type": "column",
           "settings": {
-            "icon": "house-location",
+            "icon_image": "shopify://shop_images/image.svg",
+            "fallback_icon": "house-location",
             "title": "Sustainable",
             "text": "Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum."
           }
@@ -105,7 +106,7 @@
         "column_epG6Ea": {
           "type": "column",
           "settings": {
-            "icon": "house-location",
+            "fallback_icon": "house-location",
             "title": "Based in IRELAND",
             "text": "Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur."
           }
@@ -113,14 +114,14 @@
         "column_Rwit6m": {
           "type": "column",
           "settings": {
-            "icon": "house-location",
+            "fallback_icon": "house-location",
             "title": "Something",
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
           }
         }
       },
       "block_order": [
-        "column_CtiW4H",
+        "column_fKXWJG",
         "column_xhqVwa",
         "column_epG6Ea",
         "column_Rwit6m"
