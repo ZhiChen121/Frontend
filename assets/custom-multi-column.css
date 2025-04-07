@@ -91,4 +91,8 @@
   .multi-column-button {
     margin-top: 40px;
   }
+
+  /* .multi-columns {
+    grid-template-columns: repeat(1, 1fr);
+  } */
 }
