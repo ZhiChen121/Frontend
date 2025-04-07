@@ -9,7 +9,7 @@
          </div>
          <div class="footer-info-links">
           <h1>Info</h1>
-          {% for link in section.settings.footer_links %}
+          {% for link in linklists[section.settings.footer_links].links %}
             <a href="{{ link.url }}">{{ link.title }}</a>
           {% endfor %}
          </div>
@@ -113,7 +113,7 @@
       {
         "type": "link_list",
         "id": "footer_links",
-        "label": "Manage Footer Links",
+        "label": "Footer Menu",
         "info": "Add links to your footer section",
       },
       {
