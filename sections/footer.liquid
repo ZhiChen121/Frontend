@@ -9,11 +9,9 @@
          </div>
          <div class="footer-info-links">
           <h1>Info</h1>
-          {% if settings.footer_links %}
-            {% for link in settings.footer_links %}
-              <a href="{{ link.url }}">{{ link.title }}</a>
-            {% endfor %}
-          {% endif %}
+          {% for link in section.settings.footer_links %}
+            <a href="{{ link.url }}">{{ link.title }}</a>
+          {% endfor %}
          </div>
          <div class="footer-contact">
            <h1>Contact</h1>
