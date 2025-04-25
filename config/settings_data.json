@@ -1170,6 +1170,69 @@
           "show_newsletter": true,
           "show_social_icons": true
         }
+      },
+      "global-custom-multi-column": {
+        "type": "global-custom-multi-column",
+        "blocks": {
+          "column_LtrDCf": {
+            "type": "column",
+            "settings": {
+              "fallback_icon": "house-location",
+              "title": "We Love Outdoors",
+              "text": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+            }
+          },
+          "column_aWp7cq": {
+            "type": "column",
+            "settings": {
+              "icon_image": "shopify://shop_images/image.svg",
+              "fallback_icon": "house-location",
+              "title": "Sustainable",
+              "text": "Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum."
+            }
+          },
+          "column_ykMEde": {
+            "type": "column",
+            "settings": {
+              "icon_image": "shopify://shop_images/image_1.svg",
+              "fallback_icon": "house-location",
+              "title": "Based in Ireland",
+              "text": "Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur."
+            }
+          },
+          "column_TmQTPJ": {
+            "type": "column",
+            "settings": {
+              "icon_image": "shopify://shop_images/image_2.svg",
+              "fallback_icon": "house-location",
+              "title": "something",
+              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            }
+          }
+        },
+        "block_order": [
+          "column_LtrDCf",
+          "column_aWp7cq",
+          "column_ykMEde",
+          "column_TmQTPJ"
+        ],
+        "settings": {
+          "heading": "Quisque velit nisi-",
+          "subheading": "\"Pellentesque in ipsum id orci porta dapibus.\"",
+          "button_text": "LEARN MORE",
+          "grid": 4
+        }
+      },
+      "global-rich-text": {
+        "type": "global-rich-text",
+        "settings": {
+          "rich_title_1": "28 Day Returns",
+          "rich_text_image_1": "shopify://shop_images/svgviewer-output_1.svg",
+          "rich_title_2": "Free Delivery On Orders Over €40",
+          "rich_text_image_2": "shopify://shop_images/svgviewer-output_2.svg",
+          "rich_title_3": "In Business Since 1977",
+          "rich_text_image_3": "shopify://shop_images/svgviewer-output.svg"
+        }
       }
     },
     "content_for_index": [],
