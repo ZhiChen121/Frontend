@@ -11,7 +11,10 @@
   "sections": {
     "category_collection_hero_YBLVMD": {
       "type": "category-collection-hero",
-      "settings": {}
+      "settings": {
+        "collection_title": "Tops & Jackets",
+        "collection_header_image": "shopify://shop_images/hero-homepage-2.jpg"
+      }
     },
     "main": {
       "type": "main-collection",
@@ -87,6 +90,17 @@
         "color_bg": "#ffffff"
       }
     },
+    "rich_text_9eCY6k": {
+      "type": "rich-text",
+      "settings": {
+        "rich_title_1": "28 Day Returns",
+        "rich_text_image_1": "shopify://shop_images/svgviewer-output_1.svg",
+        "rich_title_2": "Free Delivery On Orders Over €40",
+        "rich_text_image_2": "shopify://shop_images/svgviewer-output_2.svg",
+        "rich_title_3": "In Business Since 1977",
+        "rich_text_image_3": "shopify://shop_images/svgviewer-output.svg"
+      }
+    },
     "custom_multi_column_LCtYam": {
       "type": "custom-multi-column",
       "blocks": {
@@ -137,17 +151,6 @@
         "subheading": "\"Pellentesque in ipsum id orci porta dapibus.\"",
         "button_text": "LEARN MORE",
         "grid": 4
-      }
-    },
-    "rich_text_9eCY6k": {
-      "type": "rich-text",
-      "settings": {
-        "rich_title_1": "28 Day Returns",
-        "rich_text_image_1": "shopify://shop_images/svgviewer-output_1.svg",
-        "rich_title_2": "Free Delivery On Orders Over €40",
-        "rich_text_image_2": "shopify://shop_images/svgviewer-output_2.svg",
-        "rich_title_3": "In Business Since 1977",
-        "rich_text_image_3": "shopify://shop_images/svgviewer-output.svg"
       }
     }
   },
