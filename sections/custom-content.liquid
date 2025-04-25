@@ -24,7 +24,7 @@ Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Ae
   <nav class="custom-content-sidebar">
     <h1 class="sidebar-title">Sidebar</h1>
     <div>
-      {% for link in linklists[section.settings.footer_links].links %}
+      {% for link in linklists[section.settings.sidebar_links].links %}
         <a href="{{ link.url }}">{{ link.title }}</a>
       {% endfor %}
     </div>
