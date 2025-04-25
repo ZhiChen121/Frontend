@@ -132,6 +132,8 @@
   </main><!-- /#content -->
 
   {% if request.path != '/challenge' %}
+    {% section 'global-custom-multi-column' %}
+    {% section 'global-rich-text' %}
     <div id="pagefooter">
       {% section 'cross-page-promos' %}
       {% section 'footer' %}
