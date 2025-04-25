@@ -89,35 +89,65 @@
     },
     "custom_multi_column_LCtYam": {
       "type": "custom-multi-column",
-      "settings": {}
-    },
-    "rich_text_9eCY6k": {
-      "type": "rich-text",
       "blocks": {
-        "heading_bF6CEk": {
-          "type": "heading",
+        "column_Ar9cGp": {
+          "type": "column",
           "settings": {
-            "title": "Rich text",
-            "use_h1": false
+            "fallback_icon": "house-location",
+            "title": "We Love Outdoors",
+            "text": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
           }
         },
-        "text_FM6UaJ": {
-          "type": "text",
+        "column_PCEeqk": {
+          "type": "column",
           "settings": {
-            "text": "<p>Use this text to share information about your store with your customers. Describe products, share announcements, or welcome customers to your store.</p>",
-            "enlarge_text": true
+            "icon_image": "shopify://shop_images/image.svg",
+            "fallback_icon": "house-location",
+            "title": "Sustainable",
+            "text": "Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum."
+          }
+        },
+        "column_xFkyGp": {
+          "type": "column",
+          "settings": {
+            "icon_image": "shopify://shop_images/image_1.svg",
+            "fallback_icon": "house-location",
+            "title": "Based in IRELAND",
+            "text": "Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur."
+          }
+        },
+        "column_KJEVc8": {
+          "type": "column",
+          "settings": {
+            "icon_image": "shopify://shop_images/image_2.svg",
+            "fallback_icon": "house-location",
+            "title": "Something",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
           }
         }
       },
       "block_order": [
-        "heading_bF6CEk",
-        "text_FM6UaJ"
+        "column_Ar9cGp",
+        "column_PCEeqk",
+        "column_xFkyGp",
+        "column_KJEVc8"
       ],
       "settings": {
-        "height": "medium",
-        "text_alignment": "center",
-        "full_width": false,
-        "use_alt_bg": false
+        "heading": "Quisque velit nisi-",
+        "subheading": "\"Pellentesque in ipsum id orci porta dapibus.\"",
+        "button_text": "LEARN MORE",
+        "grid": 4
+      }
+    },
+    "rich_text_9eCY6k": {
+      "type": "rich-text",
+      "settings": {
+        "rich_title_1": "28 Day Returns",
+        "rich_text_image_1": "shopify://shop_images/svgviewer-output_1.svg",
+        "rich_title_2": "Free Delivery On Orders Over €40",
+        "rich_text_image_2": "shopify://shop_images/svgviewer-output_2.svg",
+        "rich_title_3": "In Business Since 1977",
+        "rich_text_image_3": "shopify://shop_images/svgviewer-output.svg"
       }
     }
   },
@@ -127,7 +157,7 @@
     "1737387886b4a10d08",
     "category_collection_desc_XTaYnb",
     "newsletter_VWjNCa",
-    "custom_multi_column_LCtYam",
-    "rich_text_9eCY6k"
+    "rich_text_9eCY6k",
+    "custom_multi_column_LCtYam"
   ]
 }
