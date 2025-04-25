@@ -1,14 +1,26 @@
 {{ 'category-collection-hero.css' | asset_url | stylesheet_tag }}
 
 <div class="collection-hero-container">
-  <img src="{{ 'hero-collection.jpg' | asset_url }}" />
-  <h1>Tops & Jackets</h1>  
+  <img src="{{ section.settings.collection_header_image | img_url: 'master' }}" alt="Shop Collection" />
+  <h1>{{ section.settings.collection_title }}</h1>  
 </div>
 
 {% schema %}
   {
     "name": "Category collection hero",
-    "settings": [],
+    "settings": [
+      {
+        "type": "text",
+        "id": "collection_title",
+        "label": "Collection Title",
+        "default": "Jackets"
+      },
+      {
+        "type": "image_picker",
+        "id": "collection_header_image",
+        "label": "Collection Header Image",
+      },
+    ],
     "presets": [
       {
         "name": "Custom Collection Hero",
