@@ -1,8 +1,11 @@
 {{ 'custom-content.css' | asset_url | stylesheet_tag }}
 
+{% assign images_per_section = section.settings.images_per_section %}
+{% assign image_blocks = section.blocks | where: "type", "image" %}
+
 <div id="custom-content-container">
   <div class="custom-content-text">
-    <h1>{{ section.blocks.heading }}</h1>
+    <!-- <h1>{{ section.blocks.heading }}</h1>
     <h3>This is a subtitle which typically goes under a headline</h3>
     <p>Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget risus varius blandit sit amet non magna. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
 
@@ -20,6 +23,29 @@ Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Ae
       <img src="{{ 'green_jacket.png' | asset_url }}"/>
       <img src="{{ 'purple_jacket.png' | asset_url }}"/>
     </div>
+  </div> -->
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'title' %}
+          <h1>{{ block.settings.heading_text }}</h1>
+        {% when 'sub_subtitle' %}
+          <h3>{{ block.settings.subheading_text }}</h3>
+        {% when 'paragraph' %}
+          <p>{{ block.settings.paragraph_text }}</p>
+        {% when 'subtitle' %}
+          <h2>{{ block.settings.heading_text }}</h2>
+      {% endcase %}
+    {% endfor %}
+    
+    {% if image_blocks.size > 0 %}
+      <div class="custom-content-images">
+        {% for block in image_blocks %}
+          <div style="flex: 0 0 {{ 100 | divided_by: images_per_section }}%;">
+            <img src="{{ block.settings.image | image_url }}" alt="">
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
   </div>
   <nav class="custom-content-sidebar">
     <h1 class="sidebar-title">Sidebar</h1>
@@ -40,7 +66,16 @@ Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Ae
         "id": "sidebar_links",
         "label": "Sidebar Links",
         "info": "Add links to the sidebar section",
-      }
+      },
+      {
+        "type": "range",
+        "id": "images_per_section",
+        "min": 1,
+        "max": 3,
+        "step": 1,
+        "label": "Images per section",
+        "default": 1
+      },
     ],
     "presets": [
       {
@@ -64,13 +99,25 @@ Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Ae
       },
       {
         "type": "subtitle",
-        "name": "Subtitle",
+        "name": "subtitle",
         "settings": [
           {
             "type": "text",
             "id": "subtitle",
-            "label": "Subtitle",
+            "label": "subtitle",
             "default": "This is a sample subtitle"
+          }
+        ]
+      },
+      {
+        "type": "sub_subtitle",
+        "name": "Sub subtitle",
+        "settings": [
+          {
+            "type": "text",
+            "id": "sub_subtitle",
+            "label": "Sub subtitle",
+            "default": "This is a sample sub subtitle"
           }
         ]
       },
