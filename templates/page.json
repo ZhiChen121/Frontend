@@ -18,7 +18,9 @@
     },
     "custom_content_gVVg6R": {
       "type": "custom-content",
-      "settings": {}
+      "settings": {
+        "sidebar_links": "sidebar-menu"
+      }
     },
     "newsletter_n968JW": {
       "type": "newsletter",
@@ -33,46 +35,11 @@
         "subheading": "<p>Be the first to know about our offers, events & new arrivals</p>",
         "color_bg": "#ffffff"
       }
-    },
-    "custom_multi_column_9EjQcK": {
-      "type": "custom-multi-column",
-      "settings": {}
-    },
-    "rich_text_jCmx6f": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_d4qQAA": {
-          "type": "heading",
-          "settings": {
-            "title": "Rich text",
-            "use_h1": false
-          }
-        },
-        "text_3VLTy6": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Use this text to share information about your store with your customers. Describe products, share announcements, or welcome customers to your store.</p>",
-            "enlarge_text": true
-          }
-        }
-      },
-      "block_order": [
-        "heading_d4qQAA",
-        "text_3VLTy6"
-      ],
-      "settings": {
-        "height": "medium",
-        "text_alignment": "center",
-        "full_width": false,
-        "use_alt_bg": false
-      }
     }
   },
   "order": [
     "main",
     "custom_content_gVVg6R",
-    "newsletter_n968JW",
-    "custom_multi_column_9EjQcK",
-    "rich_text_jCmx6f"
+    "newsletter_n968JW"
   ]
 }
