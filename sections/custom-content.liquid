@@ -21,9 +21,7 @@
               {% assign image_id = 'image_' | append: i %}
               {% assign image = block.settings[image_id] %}
               {% if image != blank %}
-                <div >
-                  <img src="{{ image | image_url }}" alt="" />
-                </div>
+                <img src="{{ image | image_url }}" alt="" />
               {% endif %}
             {% endfor %}
           </div>
