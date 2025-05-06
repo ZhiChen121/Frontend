@@ -24,10 +24,24 @@
           "settings": {
             "title": "h1 basic content page"
           }
+        },
+        "sub_subtitle_4NazbK": {
+          "type": "sub_subtitle",
+          "settings": {
+            "sub_subtitle": "This is a subtitle which typically goes under a headline"
+          }
+        },
+        "paragraph_J8rPJd": {
+          "type": "paragraph",
+          "settings": {
+            "paragraph": "Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget risus varius blandit sit amet non magna. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor."
+          }
         }
       },
       "block_order": [
-        "title_ayaEzp"
+        "title_ayaEzp",
+        "sub_subtitle_4NazbK",
+        "paragraph_J8rPJd"
       ],
       "settings": {
         "sidebar_links": "sidebar-menu",
