@@ -18,8 +18,20 @@
     },
     "custom_content_gVVg6R": {
       "type": "custom-content",
+      "blocks": {
+        "title_ayaEzp": {
+          "type": "title",
+          "settings": {
+            "title": "h1 basic content page"
+          }
+        }
+      },
+      "block_order": [
+        "title_ayaEzp"
+      ],
       "settings": {
-        "sidebar_links": "sidebar-menu"
+        "sidebar_links": "sidebar-menu",
+        "images_per_section": 1
       }
     },
     "newsletter_n968JW": {
