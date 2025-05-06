@@ -36,12 +36,42 @@
           "settings": {
             "paragraph": "Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget risus varius blandit sit amet non magna. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.\n\nPraesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas sed diam eget risus varius blandit sit amet non magna.\n\nNulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus."
           }
+        },
+        "subtitle_mex77B": {
+          "type": "subtitle",
+          "settings": {
+            "subtitle": "This is h2 headline"
+          }
+        },
+        "single_image_TEm8Ag": {
+          "type": "single_image",
+          "settings": {
+            "single_image": "shopify://shop_images/8b3052c160a562e7cac71a51444505711a5500da.png"
+          }
+        },
+        "paragraph_kJNKFQ": {
+          "type": "paragraph",
+          "settings": {
+            "paragraph": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas faucibus mollis interdum. Sed posuere consectetur est at lobortis.\n\nCurabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus.\n\nMaecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec ullamcorper nulla non metus auctor fringilla."
+          }
+        },
+        "collage_BNJdHt": {
+          "type": "collage",
+          "settings": {
+            "image_1": "shopify://shop_images/a82d8f007a4a77ba53ae20b379c5bd5e0d523be1.png",
+            "image_2": "shopify://shop_images/2b1b5be4073ecd80c07707665b451718e3e5a4db.png",
+            "images_per_row": 2
+          }
         }
       },
       "block_order": [
         "title_ayaEzp",
         "sub_subtitle_4NazbK",
-        "paragraph_J8rPJd"
+        "paragraph_J8rPJd",
+        "subtitle_mex77B",
+        "single_image_TEm8Ag",
+        "paragraph_kJNKFQ",
+        "collage_BNJdHt"
       ],
       "settings": {
         "sidebar_links": "sidebar-menu",
