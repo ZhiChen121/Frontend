@@ -1,3 +1,7 @@
+:root {
+  --primary-colour: white;
+}
+
 .multi-column-section {
   margin-top: 80px;
   margin-bottom: 80px;
@@ -53,11 +57,16 @@
 }
 
 .multi-column-button button {
-  background-color: white;
+  background-color: var(--);
   border: 2px solid #013299;
   color: #013299;
   padding: 20px 90px;
   font-weight: bold;
+}
+
+.multi-column-button button:hover {
+  color: white;
+  background-color: #013299;
 }
 
 @media (max-width: 1024px) { 
