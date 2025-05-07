@@ -65,6 +65,10 @@
     font-size: 50px;
     margin: 0;
   }
+
+  .multi-columns .column {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 768px) { 
