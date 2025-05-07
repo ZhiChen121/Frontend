@@ -51,6 +51,13 @@
   width: 50%;
 }
 
+@media (max-width: 1024px) { 
+  .custom-newsletter-container {
+    width: 75%;
+    padding: 20px;
+  }
+}
+
 @media (max-width: 768px) { 
   .section-signup {
     padding: 30px !important;
