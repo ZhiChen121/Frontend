@@ -76,15 +76,15 @@
   background-color: var(--primary-color)
 }
 
-.gallery-container-1 button {
+.gallery-container-1 button:hover {
   color: var(--secondary-color);
 }
 
-.gallery-container-2 button {
+.gallery-container-2 button:hover {
   color: var(--other-secondary-color);
 }
 
-.gallery-container-3 button {
+.gallery-container-3 button:hover {
   color: #484936;
 }
 
