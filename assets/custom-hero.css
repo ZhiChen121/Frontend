@@ -1,3 +1,8 @@
+:root {
+  --primary-color: white;
+  --secondary-color: #004289;
+}
+
 .image-container {
   display: flex;
   position: relative;
@@ -7,7 +12,7 @@
   margin: 15px;
   position: relative;
   text-align: center;
-  color: white;
+  color: var(--primary-color);
 }
 
 .image2 {
@@ -28,7 +33,7 @@
 
 .textContainer {
   text-align: center;
-  color: white;
+  color: var(--primary-color);
   z-index: 999;
   position: absolute;
   top: 50%;
@@ -38,7 +43,7 @@
 
 .textContainer h1 {
   font-size: 42px;
-  color: white;
+  color: var(--primary-color);
   font-weight: bold
 }
 
@@ -53,13 +58,18 @@
 }
 
 .textContainer button {
-  background-color: white;
+  background-color: var(--primary-color);
   border: none;
-  color: #004289;
+  color: var(--secondary-color);
   padding: 15px 25px;
   letter-spacing: 1px;
   font-weight: bold;
   border-radius: 0%;
+}
+
+.textContainer button:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 @media (max-width: 768px) {
