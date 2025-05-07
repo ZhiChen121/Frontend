@@ -1,3 +1,9 @@
+:root {
+  --primary-color: white;
+  --secondary-color: #0468db;
+  --other-secondary-color: #004289;
+}
+
 .gallery-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -14,7 +20,7 @@
 }
 
 .gallery-container-1 .gallery-text {
-  background-color: #0468DB;
+  background-color: var(--secondary-color);
 }
 
 .gallery-container-2 {
@@ -25,7 +31,7 @@
 }
 
 .gallery-container-2 .gallery-text {
-  background-color: #004289;
+  background-color: var(--other-secondary-color);
 }
 
 .gallery-container-1 img,
@@ -42,17 +48,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  color: white;
+  color: var(--primary-color);
 }
 
 .gallery-text h1 {
   font-weight: 700;
-  color: white;
+  color: var(--primary-color);
   font-size: 36px;
 }
 
 .gallery-text p {
-  color: white;
+  color: var(--primary-color);
   font-size: 16px;
 }
 
@@ -64,6 +70,22 @@
   font-weight: 600;
   margin-top: 10px;
   cursor: pointer;
+}
+
+.gallery-container button:hover {
+  background-color: var(--primary-color)
+}
+
+.gallery-container-1 button {
+  color: var(--secondary-color);
+}
+
+.gallery-container-2 button {
+  color: var(--other-secondary-color);
+}
+
+.gallery-container-3 button {
+  color: #484936;
 }
 
 .gallery-container-3 {
