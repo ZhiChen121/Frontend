@@ -114,4 +114,12 @@ h6#newsletter-title {
   .footer-info-links h1, .footer-contact h1 {
     margin-bottom: 5px;
   }
+
+  .footer-info-links a {
+    font-size: 18px;
+  }
+
+  .footer-info-links h1, .footer-contact h1 {
+    font-size: 28px;
+  }
 }
