@@ -1,7 +1,7 @@
 {{ 'category-collection-hero.css' | asset_url | stylesheet_tag }}
 
 <div class="collection-hero-container">
-  <img src="{{ section.settings.collection_header_image | img_url: 'master' }}" alt="Shop Collection" />
+  <img src="{{ section.settings.collection_header_image | image_url}}" alt="Shop Collection" />
   <h1>{{ section.settings.collection_title }}</h1>  
 </div>
 
@@ -19,6 +19,7 @@
         "type": "image_picker",
         "id": "collection_header_image",
         "label": "Collection Header Image",
+        "info": "Please upload an image with dimensions of at least 1920W and 1080H."
       },
     ],
     "presets": [
